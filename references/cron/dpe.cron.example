@@ -1,0 +1,11 @@
+# dpe local automation cron example.
+# Replace /path/to/dpe with your actual repo path.
+
+# Extract durable memory candidates from captured cross-tool conversations hourly.
+0 * * * * cd /path/to/dpe && scripts/dpe memory extract >/tmp/dpe-memory-extract.log 2>&1
+
+# Re-sync vector memory hourly after extraction / manual approval.
+5 * * * * cd /path/to/dpe && python3 ai-assistant/scripts/auto_memory.py sync >/tmp/dpe-memory-sync.log 2>&1
+
+# Run workspace evals daily.
+0 3 * * * cd /path/to/dpe && scripts/dpe eval latest >/tmp/dpe-eval.log 2>&1

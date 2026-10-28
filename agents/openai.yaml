@@ -1,0 +1,6 @@
+interface:
+  display_name: "DPE Skills"
+  short_description: "Domain skills, clear output and evidence-based E2E review"
+  default_prompt: "Use $dpe-skills to complete this task with relevant domain guidance and evidence-based validation."
+policy:
+  allow_implicit_invocation: true

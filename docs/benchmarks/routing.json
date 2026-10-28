@@ -1,0 +1,6128 @@
+{
+  "schema_version": 1,
+  "source": {
+    "git_revision": "1e3356666a9a17c5f8d428c24602db768561b6b3",
+    "working_tree_modified": true,
+    "routing_inputs_sha256": "a21d975cc45ff2fc6fe5eb47036f04befab6dcd92e376151c9e063dc04bd7dd0",
+    "input_files_sha256": {
+      "scripts/benchmark_routing.py": "178cf9011baaea17cbed4860e60bb90b5ca9048b8d3f53ea262c366da2422b36",
+      "dpe/index.py": "806d6c4eca9b3b7a23d3b41e50719a752e5af25f95eeca8c183d2de75b7e6a9b",
+      "dpe/skills.py": "efb5aed016dac4884e93352d5a10987a65957f3b59e89f41d0f884c1b12ec41a",
+      "dpe/paths.py": "cc5d0534e7049ff1fc7cc856f45afea4b1021a34b631cc1196c1f9fbd8498511",
+      "tests/test_routing.py": "52274c4305872be82438b1faebb72e61c0d1f2eca82e76df5b92d4e9d5216754",
+      "skills/aliases.json": "ac46edb5ee5ae2945efa27d1ba9df6f2e5ce22cc1d7ca96bb0d5fcd51d82cd19",
+      "skills/vendored.json": "2319e91eac2726b00c13206b5b44cc3ff5c96f7a1244314e6951ce1bc222e085"
+    },
+    "fresh_index_sha256": "932a40ef8cac74aa0e7e4b62fd6994a199a9faeb6f247b00b9b326bba1e34864"
+  },
+  "python_version": "3.12.10",
+  "corpus": {
+    "kind": "curated regression corpus, not held-out",
+    "source": "tests/test_routing.py",
+    "groups": [
+      "ROUTING_CASES",
+      "REVIEW_ROUTING_CASES"
+    ],
+    "cases": 84,
+    "sha256": "cb0896cc473c4065c69655e09a0f5239701eceeb97c6a73bd07b5cdbdf128f1b",
+    "grading": "top1 is a defensible ID; top3 contains at least one defensible ID",
+    "duplicate_policy": "one case per identical prompt, union defensible IDs and source groups"
+  },
+  "inventory": {
+    "eligible_count": 242,
+    "excluded": [
+      "x402"
+    ],
+    "skill_ids": [
+      "ab-testing",
+      "accessibility",
+      "ad-creative",
+      "ads",
+      "ai-seo",
+      "analytics",
+      "animate",
+      "animate-expo",
+      "animation-vocabulary",
+      "dpe-quality-core",
+      "dpe-quality-code",
+      "dpe-quality-copywriting",
+      "dpe-quality-human",
+      "dpe-quality-layoutmobile",
+      "dpe-quality-ui",
+      "apple-design",
+      "architecture-decision-records",
+      "ask-sonner",
+      "aso",
+      "dpe-3d-web-development",
+      "dpe-agent-architecture-audit",
+      "dpe-agent-introspection",
+      "dpe-agentic-e2e",
+      "dpe-ai-model-selection",
+      "dpe-analytics-metrics",
+      "dpe-api-design",
+      "dpe-archify-diagrams",
+      "dpe-architecture-deepening",
+      "dpe-autonomous-loops",
+      "dpe-aws-deployment",
+      "dpe-browser-automation",
+      "dpe-business-logic-review",
+      "dpe-ci-cd-pipelines",
+      "dpe-claude-code-setup",
+      "dpe-claude-md-management",
+      "dpe-code-revamp",
+      "dpe-codebase-analysis",
+      "dpe-coding-best-practices",
+      "dpe-competitor-intelligence",
+      "dpe-content-calendar",
+      "dpe-context-budget",
+      "dpe-context-limit-continuation",
+      "dpe-continuous-learning",
+      "dpe-cost-optimization",
+      "dpe-council",
+      "dpe-cross-model-escalation",
+      "dpe-cto-strategy",
+      "dpe-customer-discovery",
+      "dpe-customer-success-support",
+      "dpe-customize-dpe",
+      "dpe-cybersecurity-risk",
+      "dpe-cypress",
+      "dpe-data-architecture",
+      "dpe-database-engineering",
+      "dpe-deep-research",
+      "dpe-design-systems",
+      "dpe-devops-iac",
+      "dpe-diagnose-loop",
+      "dpe-docker",
+      "dpe-documentation-lookup",
+      "dpe-engineering-delivery",
+      "dpe-eval-driven-agent-improvement",
+      "dpe-expo-react-native",
+      "dpe-financial-modeling",
+      "dpe-github-workflow",
+      "dpe-go-development",
+      "dpe-greptile-review-loop",
+      "dpe-grill-with-docs",
+      "dpe-grounding",
+      "dpe-growth-experiment",
+      "dpe-gsap-animation",
+      "dpe-handoff",
+      "dpe-headroom",
+      "dpe-hindsight-memory",
+      "dpe-hostinger-hosting",
+      "dpe-hyperframes",
+      "dpe-i18n-l10n",
+      "dpe-incident-response",
+      "dpe-integration-testing",
+      "dpe-investor-prep",
+      "dpe-laravel-development",
+      "dpe-laravel-security",
+      "dpe-laravel-tdd",
+      "dpe-laravel-verification",
+      "dpe-launch-commercialization",
+      "dpe-lead-intelligence",
+      "dpe-legal-compliance",
+      "dpe-lenis-smooth-scroll",
+      "dpe-malaysia-pdpa-privacy",
+      "dpe-market-analysis",
+      "dpe-marketing-growth",
+      "dpe-mobile-app-release",
+      "dpe-mongodb",
+      "dpe-nuxt-development",
+      "dpe-observability-sre",
+      "dpe-operations",
+      "dpe-paid-acquisition-monetization",
+      "dpe-performance-profiling",
+      "dpe-permanent-memory-orchestration",
+      "dpe-planning-execution",
+      "dpe-polyglot-engineering",
+      "dpe-ponytail",
+      "dpe-pr-check",
+      "dpe-product-strategy",
+      "dpe-product-verification",
+      "dpe-project-understanding",
+      "dpe-prompt-injection-defense",
+      "dpe-prompt-optimizer",
+      "dpe-qa-automation-strategy",
+      "dpe-rapid-prototype",
+      "dpe-ratchet-loop",
+      "dpe-react-development",
+      "dpe-redis-caching-queues",
+      "dpe-rigorous-code-review",
+      "dpe-rules-distill",
+      "dpe-saas-billing-ops",
+      "dpe-sales-strategy",
+      "dpe-search-first",
+      "dpe-seo-geo",
+      "dpe-skill-creator",
+      "dpe-skill-finder",
+      "dpe-skill-stocktake",
+      "dpe-software-architecture",
+      "dpe-subagent-delegation",
+      "dpe-taste",
+      "dpe-tdd-loop",
+      "dpe-tech-lead",
+      "dpe-tenant-isolation-security",
+      "dpe-throwaway-prototype",
+      "dpe-token-saver",
+      "dpe-tools",
+      "dpe-ui-ux-design-to-code",
+      "dpe-vps-docker-deployment",
+      "dpe-web-performance",
+      "brainstorming",
+      "brandkit",
+      "browser-use",
+      "brutalist-skill",
+      "changelog-scan",
+      "churn-prevention",
+      "ci-triage",
+      "cloud",
+      "co-marketing",
+      "cofounder",
+      "cold-email",
+      "community-marketing",
+      "competitor-profiling",
+      "competitors",
+      "content-strategy",
+      "copy-editing",
+      "copywriting",
+      "cro",
+      "customer-research",
+      "database-migrations",
+      "dcg",
+      "dependency-triage",
+      "directory-submissions",
+      "dispatching-parallel-agents",
+      "draft-release-notes",
+      "e2e-testing",
+      "emails",
+      "emil-design-eng",
+      "error-handling",
+      "executing-plans",
+      "find-animation-opportunities",
+      "finishing-a-development-branch",
+      "free-tools",
+      "graft",
+      "graphify",
+      "hallmark",
+      "i-have-adhd",
+      "image",
+      "image-to-code-skill",
+      "imagegen-frontend-mobile",
+      "imagegen-frontend-web",
+      "improve-animations",
+      "issue-triage",
+      "launch",
+      "lead-magnets",
+      "loop-budget",
+      "loop-constraints",
+      "loop-triage",
+      "loop-verifier",
+      "malaysia-localisation",
+      "marketing-council",
+      "marketing-ideas",
+      "marketing-loops",
+      "marketing-plan",
+      "marketing-psychology",
+      "markitdown",
+      "mcp-server-patterns",
+      "minimal-fix",
+      "minimalist-skill",
+      "moli-cdp-server",
+      "moli-webfetch",
+      "mysql-patterns",
+      "odl-pdf",
+      "offers",
+      "onboarding",
+      "open-source",
+      "output-skill",
+      "paywalls",
+      "pick-ui-library",
+      "popups",
+      "post-merge-scan",
+      "pr-review-triage",
+      "pricing",
+      "product-marketing",
+      "programmatic-seo",
+      "prospecting",
+      "prototype",
+      "public-relations",
+      "python-patterns",
+      "python-testing",
+      "receiving-code-review",
+      "redesign-skill",
+      "referrals",
+      "remote-browser",
+      "requesting-code-review",
+      "review-animations",
+      "revops",
+      "sales-enablement",
+      "schema",
+      "scroll-world",
+      "seo-audit",
+      "signup",
+      "site-architecture",
+      "sms",
+      "social",
+      "soft-skill",
+      "subagent-driven-development",
+      "systematic-debugging",
+      "taste-skill",
+      "test-driven-development",
+      "using-git-worktrees",
+      "using-superpowers",
+      "verification-before-completion",
+      "video",
+      "vue-patterns",
+      "write-swift",
+      "writing-plans",
+      "writing-skills"
+    ]
+  },
+  "methods": {
+    "dpe": "find_skill top1 and rank_skills top3, using a fresh in-memory build_index",
+    "description_only": "IDF-weighted query coverage over skill ID and description token sets. Shared tokenize normalization; ID prefix removed and hyphens spaced. w(t)=log(1+N/(1+df(t))); score=sum matched query weights/sum query weights. Unseen query terms use maximum IDF. No curated triggers, exclusions, aliases, body headings, phrase bonuses or query-side variants. Ties sort by skill ID.",
+    "automatic_selection": "select_skill_stack with the full eligible inventory. A model-invoked expected set requires an accepted primary ID. A user-only expected set requires an expected ID deferred for user invocation. Automatically loading any user-only skill fails the outcome."
+  },
+  "results": {
+    "dpe": {
+      "cases": 84,
+      "top1_hits": 84,
+      "top3_hits": 84,
+      "top1_percent": 100.0,
+      "top3_percent": 100.0
+    },
+    "description_only": {
+      "cases": 84,
+      "top1_hits": 46,
+      "top3_hits": 63,
+      "top1_percent": 54.76,
+      "top3_percent": 75.0
+    },
+    "automatic_selection": {
+      "actionable_route": {
+        "cases": 84,
+        "hits": 84,
+        "percent": 100.0
+      },
+      "model_primary": {
+        "cases": 81,
+        "hits": 81,
+        "percent": 100.0
+      },
+      "user_invocation_deferral": {
+        "cases": 3,
+        "hits": 3,
+        "percent": 100.0
+      },
+      "misses": []
+    }
+  },
+  "cases": [
+    {
+      "case_id": "routing-001",
+      "prompt": "the login endpoint returns 500 intermittently",
+      "expected": [
+        "dpe-diagnose-loop",
+        "systematic-debugging"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-diagnose-loop",
+          "score": 18.897
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-diagnose-loop",
+            "score": 18.89692
+          },
+          {
+            "skill_id": "dpe-api-design",
+            "score": 5.619234
+          },
+          {
+            "skill_id": "moli-cdp-server",
+            "score": 5.176331
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "moli-cdp-server",
+          "score": 0.203399
+        },
+        "top3": [
+          {
+            "skill_id": "moli-cdp-server",
+            "score": 0.203399
+          },
+          {
+            "skill_id": "dpe-agent-introspection",
+            "score": 0.186405
+          },
+          {
+            "skill_id": "dpe-prompt-optimizer",
+            "score": 0.186405
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-diagnose-loop",
+          "systematic-debugging"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-diagnose-loop",
+        "selected": [
+          "dpe-diagnose-loop"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-002",
+      "prompt": "write tests before implementing the payment flow",
+      "expected": [
+        "dpe-tdd-loop",
+        "test-driven-development"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-tdd-loop",
+          "score": 16.443
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-tdd-loop",
+            "score": 16.443122
+          },
+          {
+            "skill_id": "test-driven-development",
+            "score": 9.615545
+          },
+          {
+            "skill_id": "churn-prevention",
+            "score": 6.522205
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-saas-billing-ops",
+          "score": 0.429172
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-saas-billing-ops",
+            "score": 0.429172
+          },
+          {
+            "skill_id": "churn-prevention",
+            "score": 0.429172
+          },
+          {
+            "skill_id": "dpe-engineering-delivery",
+            "score": 0.386197
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-tdd-loop",
+          "test-driven-development"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-tdd-loop",
+        "selected": [
+          "dpe-tdd-loop"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-003",
+      "prompt": "design the database schema for multi-tenant orders",
+      "expected": [
+        "dpe-database-engineering"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-database-engineering",
+          "score": 21.062
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-database-engineering",
+            "score": 21.062165
+          },
+          {
+            "skill_id": "dpe-tenant-isolation-security",
+            "score": 12.151878
+          },
+          {
+            "skill_id": "database-migrations",
+            "score": 9.264627
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-database-engineering",
+          "score": 0.757084
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-database-engineering",
+            "score": 0.757084
+          },
+          {
+            "skill_id": "dpe-mongodb",
+            "score": 0.514168
+          },
+          {
+            "skill_id": "database-migrations",
+            "score": 0.395686
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-database-engineering"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-database-engineering",
+        "selected": [
+          "dpe-database-engineering"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-004",
+      "prompt": "our AWS bill doubled last month",
+      "expected": [
+        "dpe-cost-optimization"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-cost-optimization",
+          "score": 16.469
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-cost-optimization",
+            "score": 16.469068
+          },
+          {
+            "skill_id": "dpe-aws-deployment",
+            "score": 6.618176
+          },
+          {
+            "skill_id": "dpe-competitor-intelligence",
+            "score": 3.654484
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-aws-deployment",
+          "score": 0.2
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-aws-deployment",
+            "score": 0.2
+          },
+          {
+            "skill_id": "dpe-competitor-intelligence",
+            "score": 0.2
+          },
+          {
+            "skill_id": "ab-testing",
+            "score": 0.0
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-cost-optimization"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-cost-optimization",
+        "selected": [
+          "dpe-cost-optimization"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-005",
+      "prompt": "set up docker compose for this project",
+      "expected": [
+        "dpe-docker"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-docker",
+          "score": 21.937
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-docker",
+            "score": 21.93662
+          },
+          {
+            "skill_id": "dpe-vps-docker-deployment",
+            "score": 11.645129
+          },
+          {
+            "skill_id": "dpe-project-understanding",
+            "score": 5.051952
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-docker",
+          "score": 0.542457
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-docker",
+            "score": 0.542457
+          },
+          {
+            "skill_id": "dpe-vps-docker-deployment",
+            "score": 0.542457
+          },
+          {
+            "skill_id": "product-marketing",
+            "score": 0.457543
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-docker"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-docker",
+        "selected": [
+          "dpe-docker"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-006",
+      "prompt": "add scroll animations with GSAP",
+      "expected": [
+        "dpe-gsap-animation"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-gsap-animation",
+          "score": 15.109
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-gsap-animation",
+            "score": 15.108986
+          },
+          {
+            "skill_id": "dpe-lenis-smooth-scroll",
+            "score": 11.202864
+          },
+          {
+            "skill_id": "animate",
+            "score": 8.378258
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-lenis-smooth-scroll",
+          "score": 0.518221
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-lenis-smooth-scroll",
+            "score": 0.518221
+          },
+          {
+            "skill_id": "animate",
+            "score": 0.481779
+          },
+          {
+            "skill_id": "dpe-gsap-animation",
+            "score": 0.463451
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-gsap-animation"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-gsap-animation",
+        "selected": [
+          "dpe-gsap-animation"
+        ],
+        "deferred": [
+          {
+            "skill_id": "dpe-lenis-smooth-scroll",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-007",
+      "prompt": "the CI pipeline is failing on main",
+      "expected": [
+        "ci-triage"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "ci-triage",
+          "score": 32.65
+        },
+        "top3": [
+          {
+            "skill_id": "ci-triage",
+            "score": 32.650492
+          },
+          {
+            "skill_id": "dpe-ci-cd-pipelines",
+            "score": 10.582367
+          },
+          {
+            "skill_id": "dpe-pr-check",
+            "score": 8.150181
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "ci-triage",
+          "score": 0.509081
+        },
+        "top3": [
+          {
+            "skill_id": "ci-triage",
+            "score": 0.509081
+          },
+          {
+            "skill_id": "dpe-ci-cd-pipelines",
+            "score": 0.420168
+          },
+          {
+            "skill_id": "dpe-diagnose-loop",
+            "score": 0.289916
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "ci-triage"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "ci-triage",
+        "selected": [
+          "ci-triage"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-008",
+      "prompt": "check for prompt injection in our agent tools",
+      "expected": [
+        "dpe-prompt-injection-defense"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-prompt-injection-defense",
+          "score": 26.01
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-prompt-injection-defense",
+            "score": 26.010264
+          },
+          {
+            "skill_id": "dpe-eval-driven-agent-improvement",
+            "score": 10.588009
+          },
+          {
+            "skill_id": "dpe-prompt-optimizer",
+            "score": 8.0045
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-prompt-injection-defense",
+          "score": 0.825032
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-prompt-injection-defense",
+            "score": 0.825032
+          },
+          {
+            "skill_id": "dpe-context-budget",
+            "score": 0.441336
+          },
+          {
+            "skill_id": "mcp-server-patterns",
+            "score": 0.383696
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-prompt-injection-defense"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-prompt-injection-defense",
+        "selected": [
+          "dpe-prompt-injection-defense"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-009",
+      "prompt": "what model should I use for this task",
+      "expected": [
+        "dpe-ai-model-selection"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-ai-model-selection",
+          "score": 23.675
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-ai-model-selection",
+            "score": 23.674555
+          },
+          {
+            "skill_id": "dpe-cross-model-escalation",
+            "score": 14.596571
+          },
+          {
+            "skill_id": "write-swift",
+            "score": 10.765279
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-ai-model-selection",
+          "score": 1.0
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-ai-model-selection",
+            "score": 1.0
+          },
+          {
+            "skill_id": "dpe-cross-model-escalation",
+            "score": 1.0
+          },
+          {
+            "skill_id": "dpe-3d-web-development",
+            "score": 0.528058
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-ai-model-selection"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-ai-model-selection",
+        "selected": [
+          "dpe-ai-model-selection"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-010",
+      "prompt": "deploy to a VPS with docker",
+      "expected": [
+        "dpe-vps-docker-deployment"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-vps-docker-deployment",
+          "score": 21.176
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-vps-docker-deployment",
+            "score": 21.17599
+          },
+          {
+            "skill_id": "dpe-docker",
+            "score": 10.14414
+          },
+          {
+            "skill_id": "dpe-hostinger-hosting",
+            "score": 9.299005
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-vps-docker-deployment",
+          "score": 1.0
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-vps-docker-deployment",
+            "score": 1.0
+          },
+          {
+            "skill_id": "dpe-hostinger-hosting",
+            "score": 0.659352
+          },
+          {
+            "skill_id": "dpe-aws-deployment",
+            "score": 0.340648
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-vps-docker-deployment"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-vps-docker-deployment",
+        "selected": [
+          "dpe-vps-docker-deployment"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-011",
+      "prompt": "run an A/B test on the pricing page",
+      "expected": [
+        "ab-testing"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "ab-testing",
+          "score": 13.608
+        },
+        "top3": [
+          {
+            "skill_id": "ab-testing",
+            "score": 13.607662
+          },
+          {
+            "skill_id": "dpe-growth-experiment",
+            "score": 9.091848
+          },
+          {
+            "skill_id": "dpe-ci-cd-pipelines",
+            "score": 8.353672
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "offers",
+          "score": 0.763148
+        },
+        "top3": [
+          {
+            "skill_id": "offers",
+            "score": 0.763148
+          },
+          {
+            "skill_id": "ab-testing",
+            "score": 0.535715
+          },
+          {
+            "skill_id": "ads",
+            "score": 0.503544
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "ab-testing"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "ab-testing",
+        "selected": [
+          "ab-testing"
+        ],
+        "deferred": [
+          {
+            "skill_id": "dpe-growth-experiment",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-012",
+      "prompt": "design a REST API for the orders service",
+      "expected": [
+        "dpe-api-design"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-api-design",
+          "score": 20.523
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-api-design",
+            "score": 20.52275
+          },
+          {
+            "skill_id": "dpe-software-architecture",
+            "score": 6.179806
+          },
+          {
+            "skill_id": "cloud",
+            "score": 5.690352
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-api-design",
+          "score": 0.546319
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-api-design",
+            "score": 0.546319
+          },
+          {
+            "skill_id": "cloud",
+            "score": 0.424146
+          },
+          {
+            "skill_id": "offers",
+            "score": 0.325371
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-api-design"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-api-design",
+        "selected": [
+          "dpe-api-design"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-013",
+      "prompt": "we had an outage last night, write the postmortem",
+      "expected": [
+        "dpe-incident-response"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-incident-response",
+          "score": 9.518
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-incident-response",
+            "score": 9.517796
+          },
+          {
+            "skill_id": "dpe-tech-lead",
+            "score": 5.499524
+          },
+          {
+            "skill_id": "dpe-database-engineering",
+            "score": 5.0
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-competitor-intelligence",
+          "score": 0.215732
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-competitor-intelligence",
+            "score": 0.215732
+          },
+          {
+            "skill_id": "dpe-incident-response",
+            "score": 0.215732
+          },
+          {
+            "skill_id": "ad-creative",
+            "score": 0.137074
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-incident-response"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-incident-response",
+        "selected": [
+          "dpe-incident-response"
+        ],
+        "deferred": [
+          {
+            "skill_id": "dpe-tech-lead",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-014",
+      "prompt": "make the app faster, it's slow on load",
+      "expected": [
+        "dpe-performance-profiling"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-performance-profiling",
+          "score": 11.764
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-performance-profiling",
+            "score": 11.764264
+          },
+          {
+            "skill_id": "dpe-web-performance",
+            "score": 9.851704
+          },
+          {
+            "skill_id": "brainstorming",
+            "score": 5.0
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-context-budget",
+          "score": 0.276815
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-context-budget",
+            "score": 0.276815
+          },
+          {
+            "skill_id": "dpe-performance-profiling",
+            "score": 0.276815
+          },
+          {
+            "skill_id": "dpe-quality-core",
+            "score": 0.233999
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-performance-profiling"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-performance-profiling",
+        "selected": [
+          "dpe-performance-profiling"
+        ],
+        "deferred": [
+          {
+            "skill_id": "dpe-web-performance",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-015",
+      "prompt": "secure our Laravel app",
+      "expected": [
+        "dpe-laravel-security"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-laravel-security",
+          "score": 14.215
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-laravel-security",
+            "score": 14.215377
+          },
+          {
+            "skill_id": "dpe-laravel-verification",
+            "score": 9.743168
+          },
+          {
+            "skill_id": "dpe-laravel-development",
+            "score": 9.736222
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-laravel-development",
+          "score": 0.323567
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-laravel-development",
+            "score": 0.323567
+          },
+          {
+            "skill_id": "dpe-laravel-security",
+            "score": 0.323567
+          },
+          {
+            "skill_id": "dpe-laravel-tdd",
+            "score": 0.323567
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-laravel-security"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-laravel-security",
+        "selected": [
+          "dpe-laravel-security"
+        ],
+        "deferred": [
+          {
+            "skill_id": "dpe-laravel-verification",
+            "reason": "does not cover another prompt concern"
+          },
+          {
+            "skill_id": "dpe-laravel-development",
+            "reason": "does not cover another prompt concern"
+          },
+          {
+            "skill_id": "dpe-laravel-tdd",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-016",
+      "prompt": "brainstorm ideas for a new feature",
+      "expected": [
+        "brainstorming"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "brainstorming",
+          "score": 16.163
+        },
+        "top3": [
+          {
+            "skill_id": "brainstorming",
+            "score": 16.162862
+          },
+          {
+            "skill_id": "marketing-ideas",
+            "score": 11.702496
+          },
+          {
+            "skill_id": "co-marketing",
+            "score": 4.867569
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "co-marketing",
+          "score": 0.566284
+        },
+        "top3": [
+          {
+            "skill_id": "co-marketing",
+            "score": 0.566284
+          },
+          {
+            "skill_id": "marketing-ideas",
+            "score": 0.566284
+          },
+          {
+            "skill_id": "content-strategy",
+            "score": 0.259409
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "brainstorming"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "brainstorming",
+        "selected": [
+          "brainstorming"
+        ],
+        "deferred": [
+          {
+            "skill_id": "marketing-ideas",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-017",
+      "prompt": "translate the app into Malay and Chinese",
+      "expected": [
+        "dpe-i18n-l10n"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-i18n-l10n",
+          "score": 15.123
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-i18n-l10n",
+            "score": 15.123238
+          },
+          {
+            "skill_id": "dpe-ui-ux-design-to-code",
+            "score": 3.205579
+          },
+          {
+            "skill_id": "dpe-mobile-app-release",
+            "score": 2.815143
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "animate-expo",
+          "score": 0.171167
+        },
+        "top3": [
+          {
+            "skill_id": "animate-expo",
+            "score": 0.171167
+          },
+          {
+            "skill_id": "aso",
+            "score": 0.171167
+          },
+          {
+            "skill_id": "dpe-agent-architecture-audit",
+            "score": 0.171167
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-i18n-l10n"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-i18n-l10n",
+        "selected": [
+          "dpe-i18n-l10n"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-018",
+      "prompt": "is this PDPA compliant",
+      "expected": [
+        "dpe-malaysia-pdpa-privacy"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-malaysia-pdpa-privacy",
+          "score": 13.173
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-malaysia-pdpa-privacy",
+            "score": 13.172996
+          },
+          {
+            "skill_id": "dpe-legal-compliance",
+            "score": 5.0
+          },
+          {
+            "skill_id": "dpe-aws-deployment",
+            "score": 4.502871
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-malaysia-pdpa-privacy",
+          "score": 0.5
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-malaysia-pdpa-privacy",
+            "score": 0.5
+          },
+          {
+            "skill_id": "ab-testing",
+            "score": 0.0
+          },
+          {
+            "skill_id": "accessibility",
+            "score": 0.0
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-malaysia-pdpa-privacy"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-malaysia-pdpa-privacy",
+        "selected": [
+          "dpe-malaysia-pdpa-privacy"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-019",
+      "prompt": "convert this pdf into markdown",
+      "expected": [
+        "markitdown"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "markitdown",
+          "score": 17.0
+        },
+        "top3": [
+          {
+            "skill_id": "markitdown",
+            "score": 17.0
+          },
+          {
+            "skill_id": "odl-pdf",
+            "score": 13.813848
+          },
+          {
+            "skill_id": "moli-webfetch",
+            "score": 8.677955
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "markitdown",
+          "score": 1.0
+        },
+        "top3": [
+          {
+            "skill_id": "markitdown",
+            "score": 1.0
+          },
+          {
+            "skill_id": "odl-pdf",
+            "score": 1.0
+          },
+          {
+            "skill_id": "moli-webfetch",
+            "score": 0.671906
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "markitdown"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "markitdown",
+        "selected": [
+          "markitdown"
+        ],
+        "deferred": [
+          {
+            "skill_id": "odl-pdf",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-020",
+      "prompt": "forecast our runway and burn rate",
+      "expected": [
+        "dpe-financial-modeling"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-financial-modeling",
+          "score": 23.8
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-financial-modeling",
+            "score": 23.8
+          },
+          {
+            "skill_id": "cro",
+            "score": 3.371554
+          },
+          {
+            "skill_id": "onboarding",
+            "score": 3.35714
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-financial-modeling",
+          "score": 0.508067
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-financial-modeling",
+            "score": 0.508067
+          },
+          {
+            "skill_id": "dpe-agent-introspection",
+            "score": 0.254033
+          },
+          {
+            "skill_id": "video",
+            "score": 0.254033
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-financial-modeling"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-financial-modeling",
+        "selected": [
+          "dpe-financial-modeling"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-021",
+      "prompt": "stop the agent from running rm -rf",
+      "expected": [
+        "dcg"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dcg",
+          "score": 18.669
+        },
+        "top3": [
+          {
+            "skill_id": "dcg",
+            "score": 18.668882
+          },
+          {
+            "skill_id": "dpe-agent-introspection",
+            "score": 4.716822
+          },
+          {
+            "skill_id": "loop-budget",
+            "score": 4.505993
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dcg",
+          "score": 0.595105
+        },
+        "top3": [
+          {
+            "skill_id": "dcg",
+            "score": 0.595105
+          },
+          {
+            "skill_id": "dpe-quality-core",
+            "score": 0.335682
+          },
+          {
+            "skill_id": "dpe-agentic-e2e",
+            "score": 0.301744
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dcg"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dcg",
+        "selected": [
+          "dcg"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-022",
+      "prompt": "our users are churning, what do we do",
+      "expected": [
+        "churn-prevention"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "churn-prevention",
+          "score": 22.906
+        },
+        "top3": [
+          {
+            "skill_id": "churn-prevention",
+            "score": 22.90592
+          },
+          {
+            "skill_id": "dpe-analytics-metrics",
+            "score": 6.0
+          },
+          {
+            "skill_id": "dpe-code-revamp",
+            "score": 6.0
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "ab-testing",
+          "score": 0.0
+        },
+        "top3": [
+          {
+            "skill_id": "ab-testing",
+            "score": 0.0
+          },
+          {
+            "skill_id": "accessibility",
+            "score": 0.0
+          },
+          {
+            "skill_id": "ad-creative",
+            "score": 0.0
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "churn-prevention"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "churn-prevention",
+        "selected": [
+          "churn-prevention"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-023",
+      "prompt": "build a three.js hero with a rotating model",
+      "expected": [
+        "dpe-3d-web-development"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-3d-web-development",
+          "score": 11.911
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-3d-web-development",
+            "score": 11.91052
+          },
+          {
+            "skill_id": "dpe-gsap-animation",
+            "score": 3.297376
+          },
+          {
+            "skill_id": "mcp-server-patterns",
+            "score": 3.076012
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-3d-web-development",
+          "score": 0.604844
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-3d-web-development",
+            "score": 0.604844
+          },
+          {
+            "skill_id": "imagegen-frontend-web",
+            "score": 0.234215
+          },
+          {
+            "skill_id": "scroll-world",
+            "score": 0.222107
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-3d-web-development"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-3d-web-development",
+        "selected": [
+          "dpe-3d-web-development"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-024",
+      "prompt": "git worktree for this feature branch",
+      "expected": [
+        "using-git-worktrees"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "using-git-worktrees",
+          "score": 23.617
+        },
+        "top3": [
+          {
+            "skill_id": "using-git-worktrees",
+            "score": 23.61685
+          },
+          {
+            "skill_id": "finishing-a-development-branch",
+            "score": 8.547952
+          },
+          {
+            "skill_id": "dpe-ci-cd-pipelines",
+            "score": 4.051664
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "using-git-worktrees",
+          "score": 0.731377
+        },
+        "top3": [
+          {
+            "skill_id": "using-git-worktrees",
+            "score": 0.731377
+          },
+          {
+            "skill_id": "dpe-agentic-e2e",
+            "score": 0.268623
+          },
+          {
+            "skill_id": "dcg",
+            "score": 0.268623
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "using-git-worktrees"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "using-git-worktrees",
+        "selected": [
+          "using-git-worktrees"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-025",
+      "prompt": "write release notes for v2",
+      "expected": [
+        "draft-release-notes"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "draft-release-notes",
+          "score": 19.949
+        },
+        "top3": [
+          {
+            "skill_id": "draft-release-notes",
+            "score": 19.949359
+          },
+          {
+            "skill_id": "changelog-scan",
+            "score": 8.781446
+          },
+          {
+            "skill_id": "dpe-mobile-app-release",
+            "score": 6.114908
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "ad-creative",
+          "score": 0.47721
+        },
+        "top3": [
+          {
+            "skill_id": "ad-creative",
+            "score": 0.47721
+          },
+          {
+            "skill_id": "changelog-scan",
+            "score": 0.47721
+          },
+          {
+            "skill_id": "draft-release-notes",
+            "score": 0.47721
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "draft-release-notes"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "draft-release-notes",
+        "selected": [
+          "draft-release-notes"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-026",
+      "prompt": "review this animation for craft issues",
+      "expected": [
+        "review-animations"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "review-animations",
+          "score": 20.062
+        },
+        "top3": [
+          {
+            "skill_id": "review-animations",
+            "score": 20.061606
+          },
+          {
+            "skill_id": "improve-animations",
+            "score": 9.757415
+          },
+          {
+            "skill_id": "dpe-gsap-animation",
+            "score": 7.456344
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "review-animations",
+          "score": 0.745663
+        },
+        "top3": [
+          {
+            "skill_id": "review-animations",
+            "score": 0.745663
+          },
+          {
+            "skill_id": "schema",
+            "score": 0.419472
+          },
+          {
+            "skill_id": "seo-audit",
+            "score": 0.419472
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "user_invocation_deferral",
+        "expected_model_ids": [],
+        "expected_user_only_ids": [
+          "review-animations"
+        ],
+        "primary": "cofounder",
+        "selected": [
+          "cofounder"
+        ],
+        "deferred": [
+          {
+            "skill_id": "review-animations",
+            "reason": "requires user invocation as /review-animations"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-027",
+      "prompt": "what should I use for toasts",
+      "expected": [
+        "pick-ui-library"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "pick-ui-library",
+          "score": 25.231
+        },
+        "top3": [
+          {
+            "skill_id": "pick-ui-library",
+            "score": 25.230941
+          },
+          {
+            "skill_id": "ask-sonner",
+            "score": 17.0
+          },
+          {
+            "skill_id": "prototype",
+            "score": 4.177741
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "ask-sonner",
+          "score": 1.0
+        },
+        "top3": [
+          {
+            "skill_id": "ask-sonner",
+            "score": 1.0
+          },
+          {
+            "skill_id": "pick-ui-library",
+            "score": 1.0
+          },
+          {
+            "skill_id": "ab-testing",
+            "score": 0.0
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "user_invocation_deferral",
+        "expected_model_ids": [],
+        "expected_user_only_ids": [
+          "pick-ui-library"
+        ],
+        "primary": "ask-sonner",
+        "selected": [
+          "ask-sonner"
+        ],
+        "deferred": [
+          {
+            "skill_id": "pick-ui-library",
+            "reason": "requires user invocation as /pick-ui-library"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-028",
+      "prompt": "scrolltrigger pinned section with gsap",
+      "expected": [
+        "dpe-gsap-animation"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-gsap-animation",
+          "score": 25.206
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-gsap-animation",
+            "score": 25.206028
+          },
+          {
+            "skill_id": "dpe-lenis-smooth-scroll",
+            "score": 6.369693
+          },
+          {
+            "skill_id": "dpe-3d-web-development",
+            "score": 5.204535
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-gsap-animation",
+          "score": 0.506215
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-gsap-animation",
+            "score": 0.506215
+          },
+          {
+            "skill_id": "dpe-hyperframes",
+            "score": 0.233677
+          },
+          {
+            "skill_id": "dpe-lenis-smooth-scroll",
+            "score": 0.233677
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-gsap-animation"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-gsap-animation",
+        "selected": [
+          "dpe-gsap-animation"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-029",
+      "prompt": "i have adhd, give me the answer action first",
+      "expected": [
+        "i-have-adhd"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "i-have-adhd",
+          "score": 14.704
+        },
+        "top3": [
+          {
+            "skill_id": "i-have-adhd",
+            "score": 14.703693
+          },
+          {
+            "skill_id": "dpe-token-saver",
+            "score": 6.956709
+          },
+          {
+            "skill_id": "dpe-grounding",
+            "score": 6.553056
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "i-have-adhd",
+          "score": 0.631379
+        },
+        "top3": [
+          {
+            "skill_id": "i-have-adhd",
+            "score": 0.631379
+          },
+          {
+            "skill_id": "ai-seo",
+            "score": 0.209299
+          },
+          {
+            "skill_id": "dpe-polyglot-engineering",
+            "score": 0.209299
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "user_invocation_deferral",
+        "expected_model_ids": [],
+        "expected_user_only_ids": [
+          "i-have-adhd"
+        ],
+        "primary": "cofounder",
+        "selected": [
+          "cofounder"
+        ],
+        "deferred": [
+          {
+            "skill_id": "i-have-adhd",
+            "reason": "requires user invocation as /i-have-adhd"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-030",
+      "prompt": "write pytest fixtures for the parser module",
+      "expected": [
+        "python-testing"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "python-testing",
+          "score": 10.448
+        },
+        "top3": [
+          {
+            "skill_id": "python-testing",
+            "score": 10.447513
+          },
+          {
+            "skill_id": "dpe-integration-testing",
+            "score": 5.581146
+          },
+          {
+            "skill_id": "dpe-architecture-deepening",
+            "score": 3.746047
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "python-testing",
+          "score": 0.438457
+        },
+        "top3": [
+          {
+            "skill_id": "python-testing",
+            "score": 0.438457
+          },
+          {
+            "skill_id": "dpe-integration-testing",
+            "score": 0.377896
+          },
+          {
+            "skill_id": "dpe-qa-automation-strategy",
+            "score": 0.202399
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "python-testing"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "python-testing",
+        "selected": [
+          "python-testing"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-031",
+      "prompt": "our mariadb replica lag keeps growing",
+      "expected": [
+        "dpe-database-engineering",
+        "mysql-patterns"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "mysql-patterns",
+          "score": 19.602
+        },
+        "top3": [
+          {
+            "skill_id": "mysql-patterns",
+            "score": 19.601684
+          },
+          {
+            "skill_id": "dpe-database-engineering",
+            "score": 6.233875
+          },
+          {
+            "skill_id": "dpe-aws-deployment",
+            "score": 3.996391
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "mysql-patterns",
+          "score": 0.405318
+        },
+        "top3": [
+          {
+            "skill_id": "mysql-patterns",
+            "score": 0.405318
+          },
+          {
+            "skill_id": "dpe-performance-profiling",
+            "score": 0.211494
+          },
+          {
+            "skill_id": "dpe-database-engineering",
+            "score": 0.193824
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-database-engineering",
+          "mysql-patterns"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "mysql-patterns",
+        "selected": [
+          "mysql-patterns"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-032",
+      "prompt": "plan a zero downtime column rename migration",
+      "expected": [
+        "dpe-database-engineering",
+        "database-migrations"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "database-migrations",
+          "score": 17.89
+        },
+        "top3": [
+          {
+            "skill_id": "database-migrations",
+            "score": 17.889789
+          },
+          {
+            "skill_id": "dpe-database-engineering",
+            "score": 6.779772
+          },
+          {
+            "skill_id": "dpe-engineering-delivery",
+            "score": 3.123989
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-database-engineering",
+          "score": 0.236123
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-database-engineering",
+            "score": 0.236123
+          },
+          {
+            "skill_id": "dpe-data-architecture",
+            "score": 0.141976
+          },
+          {
+            "skill_id": "dpe-laravel-development",
+            "score": 0.141976
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-database-engineering",
+          "database-migrations"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "database-migrations",
+        "selected": [
+          "database-migrations"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-033",
+      "prompt": "build an mcp server that exposes our api as tools",
+      "expected": [
+        "mcp-server-patterns"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "mcp-server-patterns",
+          "score": 33.473
+        },
+        "top3": [
+          {
+            "skill_id": "mcp-server-patterns",
+            "score": 33.472944
+          },
+          {
+            "skill_id": "open-source",
+            "score": 7.174403
+          },
+          {
+            "skill_id": "dpe-claude-code-setup",
+            "score": 6.108815
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "mcp-server-patterns",
+          "score": 0.756488
+        },
+        "top3": [
+          {
+            "skill_id": "mcp-server-patterns",
+            "score": 0.756488
+          },
+          {
+            "skill_id": "open-source",
+            "score": 0.632592
+          },
+          {
+            "skill_id": "remote-browser",
+            "score": 0.42455
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "mcp-server-patterns"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "mcp-server-patterns",
+        "selected": [
+          "mcp-server-patterns"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-034",
+      "prompt": "audit this form for wcag 2.2 keyboard and contrast",
+      "expected": [
+        "accessibility",
+        "dpe-ui-ux-design-to-code"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "accessibility",
+          "score": 23.149
+        },
+        "top3": [
+          {
+            "skill_id": "accessibility",
+            "score": 23.148716
+          },
+          {
+            "skill_id": "dpe-quality-human",
+            "score": 7.270827
+          },
+          {
+            "skill_id": "dpe-ui-ux-design-to-code",
+            "score": 4.317922
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "accessibility",
+          "score": 0.85842
+        },
+        "top3": [
+          {
+            "skill_id": "accessibility",
+            "score": 0.85842
+          },
+          {
+            "skill_id": "dpe-quality-human",
+            "score": 0.353185
+          },
+          {
+            "skill_id": "dpe-ui-ux-design-to-code",
+            "score": 0.187284
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "accessibility",
+          "dpe-ui-ux-design-to-code"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "accessibility",
+        "selected": [
+          "accessibility"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-035",
+      "prompt": "write an adr for choosing postgres over mongo",
+      "expected": [
+        "architecture-decision-records",
+        "dpe-tech-lead"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "architecture-decision-records",
+          "score": 19.287
+        },
+        "top3": [
+          {
+            "skill_id": "architecture-decision-records",
+            "score": 19.287426
+          },
+          {
+            "skill_id": "dpe-mongodb",
+            "score": 3.472197
+          },
+          {
+            "skill_id": "dpe-database-engineering",
+            "score": 3.384253
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "architecture-decision-records",
+          "score": 0.215732
+        },
+        "top3": [
+          {
+            "skill_id": "architecture-decision-records",
+            "score": 0.215732
+          },
+          {
+            "skill_id": "ad-creative",
+            "score": 0.137074
+          },
+          {
+            "skill_id": "animate",
+            "score": 0.137074
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "architecture-decision-records",
+          "dpe-tech-lead"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "architecture-decision-records",
+        "selected": [
+          "architecture-decision-records"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-036",
+      "prompt": "the sonner toast appears behind the modal",
+      "expected": [
+        "ask-sonner"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "ask-sonner",
+          "score": 25.176
+        },
+        "top3": [
+          {
+            "skill_id": "ask-sonner",
+            "score": 25.175868
+          },
+          {
+            "skill_id": "prototype",
+            "score": 4.277631
+          },
+          {
+            "skill_id": "pick-ui-library",
+            "score": 4.224657
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "ask-sonner",
+          "score": 1.0
+        },
+        "top3": [
+          {
+            "skill_id": "ask-sonner",
+            "score": 1.0
+          },
+          {
+            "skill_id": "ai-seo",
+            "score": 0.207369
+          },
+          {
+            "skill_id": "pick-ui-library",
+            "score": 0.207369
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "ask-sonner"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "ask-sonner",
+        "selected": [
+          "ask-sonner"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-037",
+      "prompt": "swift 6 data race inside my actor",
+      "expected": [
+        "write-swift"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "write-swift",
+          "score": 29.685
+        },
+        "top3": [
+          {
+            "skill_id": "write-swift",
+            "score": 29.685246
+          },
+          {
+            "skill_id": "dpe-go-development",
+            "score": 11.728337
+          },
+          {
+            "skill_id": "dpe-prompt-injection-defense",
+            "score": 3.213171
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "write-swift",
+          "score": 0.787129
+        },
+        "top3": [
+          {
+            "skill_id": "write-swift",
+            "score": 0.787129
+          },
+          {
+            "skill_id": "open-source",
+            "score": 0.341982
+          },
+          {
+            "skill_id": "dpe-autonomous-loops",
+            "score": 0.212871
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "write-swift"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "write-swift",
+        "selected": [
+          "write-swift"
+        ],
+        "deferred": [
+          {
+            "skill_id": "dpe-go-development",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-038",
+      "prompt": "animate the bottom sheet in expo with reanimated",
+      "expected": [
+        "animate-expo",
+        "dpe-expo-react-native"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "animate-expo",
+          "score": 16.494
+        },
+        "top3": [
+          {
+            "skill_id": "animate-expo",
+            "score": 16.494239
+          },
+          {
+            "skill_id": "dpe-expo-react-native",
+            "score": 7.268715
+          },
+          {
+            "skill_id": "apple-design",
+            "score": 4.792882
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "animate-expo",
+          "score": 0.779086
+        },
+        "top3": [
+          {
+            "skill_id": "animate-expo",
+            "score": 0.779086
+          },
+          {
+            "skill_id": "apple-design",
+            "score": 0.189415
+          },
+          {
+            "skill_id": "dpe-expo-react-native",
+            "score": 0.189415
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "animate-expo",
+          "dpe-expo-react-native"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "animate-expo",
+        "selected": [
+          "animate-expo"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-039",
+      "prompt": "pinia store and vue router setup for a vue 3 app",
+      "expected": [
+        "dpe-nuxt-development",
+        "vue-patterns"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "vue-patterns",
+          "score": 37.057
+        },
+        "top3": [
+          {
+            "skill_id": "vue-patterns",
+            "score": 37.056661
+          },
+          {
+            "skill_id": "dpe-mobile-app-release",
+            "score": 5.851094
+          },
+          {
+            "skill_id": "dpe-expo-react-native",
+            "score": 5.426011
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "vue-patterns",
+          "score": 0.52808
+        },
+        "top3": [
+          {
+            "skill_id": "vue-patterns",
+            "score": 0.52808
+          },
+          {
+            "skill_id": "dpe-nuxt-development",
+            "score": 0.488813
+          },
+          {
+            "skill_id": "dpe-lenis-smooth-scroll",
+            "score": 0.333331
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-nuxt-development",
+          "vue-patterns"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "vue-patterns",
+        "selected": [
+          "vue-patterns"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-040",
+      "prompt": "add retries with a circuit breaker to the payment client",
+      "expected": [
+        "error-handling"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "error-handling",
+          "score": 17.211
+        },
+        "top3": [
+          {
+            "skill_id": "error-handling",
+            "score": 17.211064
+          },
+          {
+            "skill_id": "dpe-saas-billing-ops",
+            "score": 5.253609
+          },
+          {
+            "skill_id": "dpe-api-design",
+            "score": 5.0
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "error-handling",
+          "score": 0.537088
+        },
+        "top3": [
+          {
+            "skill_id": "error-handling",
+            "score": 0.537088
+          },
+          {
+            "skill_id": "animate",
+            "score": 0.164072
+          },
+          {
+            "skill_id": "schema",
+            "score": 0.164072
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "error-handling"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "error-handling",
+        "selected": [
+          "error-handling"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-041",
+      "prompt": "de-flake our playwright e2e suite in ci",
+      "expected": [
+        "dpe-browser-automation",
+        "dpe-qa-automation-strategy",
+        "e2e-testing"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "e2e-testing",
+          "score": 28.685
+        },
+        "top3": [
+          {
+            "skill_id": "e2e-testing",
+            "score": 28.684731
+          },
+          {
+            "skill_id": "dpe-qa-automation-strategy",
+            "score": 10.335416
+          },
+          {
+            "skill_id": "dpe-agentic-e2e",
+            "score": 8.466496
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-agentic-e2e",
+          "score": 0.584947
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-agentic-e2e",
+            "score": 0.584947
+          },
+          {
+            "skill_id": "e2e-testing",
+            "score": 0.555767
+          },
+          {
+            "skill_id": "dpe-qa-automation-strategy",
+            "score": 0.544585
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-browser-automation",
+          "dpe-qa-automation-strategy",
+          "e2e-testing"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "e2e-testing",
+        "selected": [
+          "e2e-testing"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-042",
+      "prompt": "remove generic AI slop from this responsive landing page",
+      "expected": [
+        "dpe-quality-core",
+        "dpe-quality-ui",
+        "dpe-taste",
+        "hallmark",
+        "taste-skill"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-quality-core",
+          "score": 18.061
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-quality-core",
+            "score": 18.061277
+          },
+          {
+            "skill_id": "taste-skill",
+            "score": 15.491109
+          },
+          {
+            "skill_id": "hallmark",
+            "score": 10.925412
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-taste",
+          "score": 0.440439
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-taste",
+            "score": 0.440439
+          },
+          {
+            "skill_id": "dpe-quality-core",
+            "score": 0.425072
+          },
+          {
+            "skill_id": "dpe-quality-code",
+            "score": 0.425072
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-quality-core",
+          "dpe-quality-ui",
+          "dpe-taste",
+          "hallmark",
+          "taste-skill"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-quality-core",
+        "selected": [
+          "dpe-quality-core",
+          "taste-skill"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-043",
+      "prompt": "rewrite this copy without em dashes fake claims or chatbot filler",
+      "expected": [
+        "dpe-quality-copywriting",
+        "copy-editing",
+        "copywriting"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-quality-copywriting",
+          "score": 36.43
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-quality-copywriting",
+            "score": 36.430175
+          },
+          {
+            "skill_id": "dpe-quality-core",
+            "score": 3.776158
+          },
+          {
+            "skill_id": "copywriting",
+            "score": 3.613778
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "ad-creative",
+          "score": 0.194824
+        },
+        "top3": [
+          {
+            "skill_id": "ad-creative",
+            "score": 0.194824
+          },
+          {
+            "skill_id": "copywriting",
+            "score": 0.194824
+          },
+          {
+            "skill_id": "prospecting",
+            "score": 0.160408
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-quality-copywriting",
+          "copy-editing",
+          "copywriting"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-quality-copywriting",
+        "selected": [
+          "dpe-quality-copywriting"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-044",
+      "prompt": "clean obvious AI comments without changing the code",
+      "expected": [
+        "dpe-quality-code"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-quality-code",
+          "score": 19.319
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-quality-code",
+            "score": 19.319474
+          },
+          {
+            "skill_id": "dpe-code-revamp",
+            "score": 5.101406
+          },
+          {
+            "skill_id": "receiving-code-review",
+            "score": 4.97123
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-quality-code",
+          "score": 0.330007
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-quality-code",
+            "score": 0.330007
+          },
+          {
+            "skill_id": "image-to-code-skill",
+            "score": 0.241298
+          },
+          {
+            "skill_id": "imagegen-frontend-mobile",
+            "score": 0.241298
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-quality-code"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-quality-code",
+        "selected": [
+          "dpe-quality-code"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-045",
+      "prompt": "audit keyboard focus contrast and missing UI states",
+      "expected": [
+        "accessibility",
+        "dpe-ui-ux-design-to-code"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "accessibility",
+          "score": 19.257
+        },
+        "top3": [
+          {
+            "skill_id": "accessibility",
+            "score": 19.256581
+          },
+          {
+            "skill_id": "dpe-quality-human",
+            "score": 10.767102
+          },
+          {
+            "skill_id": "dpe-ui-ux-design-to-code",
+            "score": 5.948517
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-quality-human",
+          "score": 0.610783
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-quality-human",
+            "score": 0.610783
+          },
+          {
+            "skill_id": "accessibility",
+            "score": 0.524115
+          },
+          {
+            "skill_id": "dpe-throwaway-prototype",
+            "score": 0.221922
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "accessibility",
+          "dpe-ui-ux-design-to-code"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "accessibility",
+        "selected": [
+          "accessibility"
+        ],
+        "deferred": [
+          {
+            "skill_id": "pick-ui-library",
+            "reason": "requires user invocation as /pick-ui-library"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-046",
+      "prompt": "fix mobile overflow responsive reflow and small tap targets",
+      "expected": [
+        "accessibility",
+        "dpe-quality-layoutmobile",
+        "dpe-ui-ux-design-to-code"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-quality-layoutmobile",
+          "score": 29.563
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-quality-layoutmobile",
+            "score": 29.562582
+          },
+          {
+            "skill_id": "dpe-ui-ux-design-to-code",
+            "score": 4.403851
+          },
+          {
+            "skill_id": "imagegen-frontend-mobile",
+            "score": 2.436173
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-quality-layoutmobile",
+          "score": 0.631647
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-quality-layoutmobile",
+            "score": 0.631647
+          },
+          {
+            "skill_id": "prospecting",
+            "score": 0.222907
+          },
+          {
+            "skill_id": "dpe-greptile-review-loop",
+            "score": 0.206766
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "accessibility",
+          "dpe-quality-layoutmobile",
+          "dpe-ui-ux-design-to-code"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-quality-layoutmobile",
+        "selected": [
+          "dpe-quality-layoutmobile"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-047",
+      "prompt": "use Headroom to compress this huge tool output and retrieve the original",
+      "expected": [
+        "dpe-headroom"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-headroom",
+          "score": 17.311
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-headroom",
+            "score": 17.311079
+          },
+          {
+            "skill_id": "dpe-tools",
+            "score": 5.922431
+          },
+          {
+            "skill_id": "dpe-prompt-injection-defense",
+            "score": 4.569123
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-headroom",
+          "score": 0.343316
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-headroom",
+            "score": 0.343316
+          },
+          {
+            "skill_id": "imagegen-frontend-web",
+            "score": 0.255095
+          },
+          {
+            "skill_id": "dpe-tools",
+            "score": 0.241885
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-headroom"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-headroom",
+        "selected": [
+          "dpe-headroom"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-048",
+      "prompt": "extract tables from this PDF to JSON with opendataloader-pdf",
+      "expected": [
+        "odl-pdf"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "odl-pdf",
+          "score": 32.753
+        },
+        "top3": [
+          {
+            "skill_id": "odl-pdf",
+            "score": 32.753112
+          },
+          {
+            "skill_id": "markitdown",
+            "score": 7.885327
+          },
+          {
+            "skill_id": "dpe-tools",
+            "score": 5.150647
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "odl-pdf",
+          "score": 1.0
+        },
+        "top3": [
+          {
+            "skill_id": "odl-pdf",
+            "score": 1.0
+          },
+          {
+            "skill_id": "moli-webfetch",
+            "score": 0.38289
+          },
+          {
+            "skill_id": "dpe-go-development",
+            "score": 0.210217
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "odl-pdf"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "odl-pdf",
+        "selected": [
+          "odl-pdf"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-049",
+      "prompt": "OCR this scanned PDF with ODL and verify the extracted text",
+      "expected": [
+        "odl-pdf"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "odl-pdf",
+          "score": 17.676
+        },
+        "top3": [
+          {
+            "skill_id": "odl-pdf",
+            "score": 17.676171
+          },
+          {
+            "skill_id": "markitdown",
+            "score": 7.576925
+          },
+          {
+            "skill_id": "post-merge-scan",
+            "score": 3.467593
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "odl-pdf",
+          "score": 0.684548
+        },
+        "top3": [
+          {
+            "skill_id": "odl-pdf",
+            "score": 0.684548
+          },
+          {
+            "skill_id": "dpe-grounding",
+            "score": 0.128044
+          },
+          {
+            "skill_id": "dpe-hindsight-memory",
+            "score": 0.128044
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "odl-pdf"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "odl-pdf",
+        "selected": [
+          "odl-pdf"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-050",
+      "prompt": "build a PDF RAG pipeline with page and bounding box citations",
+      "expected": [
+        "odl-pdf"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "odl-pdf",
+          "score": 13.963
+        },
+        "top3": [
+          {
+            "skill_id": "odl-pdf",
+            "score": 13.963484
+          },
+          {
+            "skill_id": "dpe-ci-cd-pipelines",
+            "score": 3.238513
+          },
+          {
+            "skill_id": "ci-triage",
+            "score": 2.819364
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "odl-pdf",
+          "score": 0.636544
+        },
+        "top3": [
+          {
+            "skill_id": "odl-pdf",
+            "score": 0.636544
+          },
+          {
+            "skill_id": "directory-submissions",
+            "score": 0.20255
+          },
+          {
+            "skill_id": "customer-research",
+            "score": 0.153792
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "odl-pdf"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "odl-pdf",
+        "selected": [
+          "odl-pdf"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-051",
+      "prompt": "don't hallucinate, cite a source for every claim in this report",
+      "expected": [
+        "dpe-deep-research",
+        "dpe-grounding"
+      ],
+      "sources": [
+        "ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-grounding",
+          "score": 13.47
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-grounding",
+            "score": 13.469968
+          },
+          {
+            "skill_id": "dpe-agent-architecture-audit",
+            "score": 3.289565
+          },
+          {
+            "skill_id": "dpe-quality-copywriting",
+            "score": 3.181484
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-grounding",
+          "score": 0.275412
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-grounding",
+            "score": 0.275412
+          },
+          {
+            "skill_id": "verification-before-completion",
+            "score": 0.152058
+          },
+          {
+            "skill_id": "dpe-agent-introspection",
+            "score": 0.134696
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-deep-research",
+          "dpe-grounding"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-grounding",
+        "selected": [
+          "dpe-grounding"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-052",
+      "prompt": "add a frame animation to the loading spinner",
+      "expected": [
+        "animate"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "animate",
+          "score": 6.674
+        },
+        "top3": [
+          {
+            "skill_id": "animate",
+            "score": 6.674406
+          },
+          {
+            "skill_id": "animate-expo",
+            "score": 6.224549
+          },
+          {
+            "skill_id": "emil-design-eng",
+            "score": 5.548669
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "animate",
+          "score": 0.340926
+        },
+        "top3": [
+          {
+            "skill_id": "animate",
+            "score": 0.340926
+          },
+          {
+            "skill_id": "ask-sonner",
+            "score": 0.219691
+          },
+          {
+            "skill_id": "imagegen-frontend-mobile",
+            "score": 0.219691
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "animate"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "animate",
+        "selected": [
+          "animate"
+        ],
+        "deferred": [
+          {
+            "skill_id": "animate-expo",
+            "reason": "does not cover another prompt concern"
+          },
+          {
+            "skill_id": "emil-design-eng",
+            "reason": "alternative to an already selected skill"
+          },
+          {
+            "skill_id": "dpe-3d-web-development",
+            "reason": "does not cover another prompt concern"
+          },
+          {
+            "skill_id": "prototype",
+            "reason": "requires user invocation as /prototype"
+          },
+          {
+            "skill_id": "dpe-gsap-animation",
+            "reason": "does not cover another prompt concern"
+          },
+          {
+            "skill_id": "improve-animations",
+            "reason": "does not cover another prompt concern"
+          },
+          {
+            "skill_id": "review-animations",
+            "reason": "requires user invocation as /review-animations"
+          },
+          {
+            "skill_id": "animation-vocabulary",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-053",
+      "prompt": "micro-interactions for the settings page",
+      "expected": [
+        "animate"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "animate",
+          "score": 21.477
+        },
+        "top3": [
+          {
+            "skill_id": "animate",
+            "score": 21.477351
+          },
+          {
+            "skill_id": "dpe-ui-ux-design-to-code",
+            "score": 15.285327
+          },
+          {
+            "skill_id": "soft-skill",
+            "score": 5.0
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-claude-code-setup",
+          "score": 0.359397
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-claude-code-setup",
+            "score": 0.359397
+          },
+          {
+            "skill_id": "dpe-docker",
+            "score": 0.359397
+          },
+          {
+            "skill_id": "dpe-github-workflow",
+            "score": 0.359397
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "animate"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "animate",
+        "selected": [
+          "animate",
+          "dpe-ui-ux-design-to-code"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-054",
+      "prompt": "hover animation on cards",
+      "expected": [
+        "animate"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "animate",
+          "score": 21.457
+        },
+        "top3": [
+          {
+            "skill_id": "animate",
+            "score": 21.456565
+          },
+          {
+            "skill_id": "review-animations",
+            "score": 9.699031
+          },
+          {
+            "skill_id": "animation-vocabulary",
+            "score": 8.505816
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "soft-skill",
+          "score": 0.585078
+        },
+        "top3": [
+          {
+            "skill_id": "soft-skill",
+            "score": 0.585078
+          },
+          {
+            "skill_id": "dpe-customer-discovery",
+            "score": 0.32144
+          },
+          {
+            "skill_id": "competitor-profiling",
+            "score": 0.32144
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "animate"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "animate",
+        "selected": [
+          "animate"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-055",
+      "prompt": "improve INP on my next.js app",
+      "expected": [
+        "dpe-web-performance"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-web-performance",
+          "score": 17.881
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-web-performance",
+            "score": 17.881234
+          },
+          {
+            "skill_id": "dpe-react-development",
+            "score": 11.145961
+          },
+          {
+            "skill_id": "dpe-documentation-lookup",
+            "score": 3.862873
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "aso",
+          "score": 0.254929
+        },
+        "top3": [
+          {
+            "skill_id": "aso",
+            "score": 0.254929
+          },
+          {
+            "skill_id": "improve-animations",
+            "score": 0.254929
+          },
+          {
+            "skill_id": "dpe-3d-web-development",
+            "score": 0.180934
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-web-performance"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-web-performance",
+        "selected": [
+          "dpe-web-performance"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-056",
+      "prompt": "toast notifications in react",
+      "expected": [
+        "ask-sonner"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "ask-sonner",
+          "score": 23.8
+        },
+        "top3": [
+          {
+            "skill_id": "ask-sonner",
+            "score": 23.8
+          },
+          {
+            "skill_id": "dpe-expo-react-native",
+            "score": 11.371593
+          },
+          {
+            "skill_id": "pick-ui-library",
+            "score": 7.006527
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "ask-sonner",
+          "score": 0.644283
+        },
+        "top3": [
+          {
+            "skill_id": "ask-sonner",
+            "score": 0.644283
+          },
+          {
+            "skill_id": "dpe-expo-react-native",
+            "score": 0.644283
+          },
+          {
+            "skill_id": "pick-ui-library",
+            "score": 0.355717
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "ask-sonner"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "ask-sonner",
+        "selected": [
+          "ask-sonner"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-057",
+      "prompt": "write a discovery call script for my B2B SaaS",
+      "expected": [
+        "sales-enablement"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "sales-enablement",
+          "score": 25.886
+        },
+        "top3": [
+          {
+            "skill_id": "sales-enablement",
+            "score": 25.885506
+          },
+          {
+            "skill_id": "dpe-customer-discovery",
+            "score": 7.879924
+          },
+          {
+            "skill_id": "prospecting",
+            "score": 5.895182
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-customer-discovery",
+          "score": 0.357758
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-customer-discovery",
+            "score": 0.357758
+          },
+          {
+            "skill_id": "directory-submissions",
+            "score": 0.331535
+          },
+          {
+            "skill_id": "offers",
+            "score": 0.323358
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "sales-enablement"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "sales-enablement",
+        "selected": [
+          "sales-enablement"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-058",
+      "prompt": "weekly pipeline review of my deals",
+      "expected": [
+        "dpe-sales-strategy"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-sales-strategy",
+          "score": 19.618
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-sales-strategy",
+            "score": 19.618365
+          },
+          {
+            "skill_id": "revops",
+            "score": 6.128903
+          },
+          {
+            "skill_id": "marketing-loops",
+            "score": 5.493051
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "revops",
+          "score": 0.514359
+        },
+        "top3": [
+          {
+            "skill_id": "revops",
+            "score": 0.514359
+          },
+          {
+            "skill_id": "marketing-loops",
+            "score": 0.485641
+          },
+          {
+            "skill_id": "sales-enablement",
+            "score": 0.303758
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-sales-strategy"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-sales-strategy",
+        "selected": [
+          "dpe-sales-strategy"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-059",
+      "prompt": "follow-up cadence after a demo",
+      "expected": [
+        "dpe-sales-strategy"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-sales-strategy",
+          "score": 29.755
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-sales-strategy",
+            "score": 29.755246
+          },
+          {
+            "skill_id": "dpe-rapid-prototype",
+            "score": 6.854434
+          },
+          {
+            "skill_id": "cold-email",
+            "score": 6.324944
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "cold-email",
+          "score": 0.354434
+        },
+        "top3": [
+          {
+            "skill_id": "cold-email",
+            "score": 0.354434
+          },
+          {
+            "skill_id": "post-merge-scan",
+            "score": 0.354434
+          },
+          {
+            "skill_id": "dpe-rapid-prototype",
+            "score": 0.331602
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-sales-strategy"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-sales-strategy",
+        "selected": [
+          "dpe-sales-strategy"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-060",
+      "prompt": "set up cold email deliverability SPF DKIM DMARC",
+      "expected": [
+        "dpe-lead-intelligence"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-lead-intelligence",
+          "score": 25.158
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-lead-intelligence",
+            "score": 25.157733
+          },
+          {
+            "skill_id": "cold-email",
+            "score": 18.801158
+          },
+          {
+            "skill_id": "lead-magnets",
+            "score": 4.673744
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "cold-email",
+          "score": 0.228823
+        },
+        "top3": [
+          {
+            "skill_id": "cold-email",
+            "score": 0.228823
+          },
+          {
+            "skill_id": "emails",
+            "score": 0.228823
+          },
+          {
+            "skill_id": "revops",
+            "score": 0.228823
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-lead-intelligence"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-lead-intelligence",
+        "selected": [
+          "dpe-lead-intelligence"
+        ],
+        "deferred": [
+          {
+            "skill_id": "cold-email",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-061",
+      "prompt": "SAFE vs priced round and cap table dilution",
+      "expected": [
+        "dpe-investor-prep"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-investor-prep",
+          "score": 29.419
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-investor-prep",
+            "score": 29.41891
+          },
+          {
+            "skill_id": "loop-budget",
+            "score": 3.275601
+          },
+          {
+            "skill_id": "dpe-database-engineering",
+            "score": 3.081619
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-go-development",
+          "score": 0.141609
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-go-development",
+            "score": 0.141609
+          },
+          {
+            "skill_id": "odl-pdf",
+            "score": 0.141609
+          },
+          {
+            "skill_id": "dpe-database-engineering",
+            "score": 0.12544
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-investor-prep"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-investor-prep",
+        "selected": [
+          "dpe-investor-prep"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-062",
+      "prompt": "build a lead list of dental clinics in Kuala Lumpur",
+      "expected": [
+        "prospecting"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "prospecting",
+          "score": 14.88
+        },
+        "top3": [
+          {
+            "skill_id": "prospecting",
+            "score": 14.879511
+          },
+          {
+            "skill_id": "dpe-lead-intelligence",
+            "score": 4.254137
+          },
+          {
+            "skill_id": "lead-magnets",
+            "score": 4.143539
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "prospecting",
+          "score": 0.315634
+        },
+        "top3": [
+          {
+            "skill_id": "prospecting",
+            "score": 0.315634
+          },
+          {
+            "skill_id": "dpe-lead-intelligence",
+            "score": 0.228584
+          },
+          {
+            "skill_id": "free-tools",
+            "score": 0.193049
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "prospecting"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "prospecting",
+        "selected": [
+          "prospecting"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-063",
+      "prompt": "check for sql injection in this code",
+      "expected": [
+        "dpe-cybersecurity-risk"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-cybersecurity-risk",
+          "score": 19.498
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-cybersecurity-risk",
+            "score": 19.498364
+          },
+          {
+            "skill_id": "dpe-laravel-security",
+            "score": 8.948531
+          },
+          {
+            "skill_id": "dpe-rigorous-code-review",
+            "score": 6.582839
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-coding-best-practices",
+          "score": 0.356348
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-coding-best-practices",
+            "score": 0.356348
+          },
+          {
+            "skill_id": "dpe-laravel-development",
+            "score": 0.356348
+          },
+          {
+            "skill_id": "dpe-context-budget",
+            "score": 0.321826
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-cybersecurity-risk"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-cybersecurity-risk",
+        "selected": [
+          "dpe-cybersecurity-risk"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-064",
+      "prompt": "dockerize my node app",
+      "expected": [
+        "dpe-docker"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-docker",
+          "score": 11.476
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-docker",
+            "score": 11.476427
+          },
+          {
+            "skill_id": "dpe-aws-deployment",
+            "score": 8.493425
+          },
+          {
+            "skill_id": "dpe-agentic-e2e",
+            "score": 7.114505
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "graphify",
+          "score": 0.361377
+        },
+        "top3": [
+          {
+            "skill_id": "graphify",
+            "score": 0.361377
+          },
+          {
+            "skill_id": "mcp-server-patterns",
+            "score": 0.361377
+          },
+          {
+            "skill_id": "animate-expo",
+            "score": 0.244301
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-docker"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-docker",
+        "selected": [
+          "dpe-docker",
+          "dpe-aws-deployment"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-065",
+      "prompt": "nuxt 4 data fetching",
+      "expected": [
+        "dpe-nuxt-development"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-nuxt-development",
+          "score": 18.269
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-nuxt-development",
+            "score": 18.268834
+          },
+          {
+            "skill_id": "dpe-react-development",
+            "score": 10.038222
+          },
+          {
+            "skill_id": "vue-patterns",
+            "score": 6.228729
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-react-development",
+          "score": 0.644707
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-react-development",
+            "score": 0.644707
+          },
+          {
+            "skill_id": "dpe-lenis-smooth-scroll",
+            "score": 0.355293
+          },
+          {
+            "skill_id": "dpe-nuxt-development",
+            "score": 0.355293
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-nuxt-development"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-nuxt-development",
+        "selected": [
+          "dpe-nuxt-development"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-066",
+      "prompt": "dependency injection in laravel",
+      "expected": [
+        "dpe-laravel-development"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-laravel-development",
+          "score": 23.286
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-laravel-development",
+            "score": 23.285706
+          },
+          {
+            "skill_id": "dpe-laravel-security",
+            "score": 12.590293
+          },
+          {
+            "skill_id": "dpe-laravel-verification",
+            "score": 11.684794
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dependency-triage",
+          "score": 0.371588
+        },
+        "top3": [
+          {
+            "skill_id": "dependency-triage",
+            "score": 0.371588
+          },
+          {
+            "skill_id": "dpe-context-budget",
+            "score": 0.340542
+          },
+          {
+            "skill_id": "dpe-prompt-injection-defense",
+            "score": 0.340542
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-laravel-development"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-laravel-development",
+        "selected": [
+          "dpe-laravel-development"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-067",
+      "prompt": "expo sdk upgrade",
+      "expected": [
+        "dpe-expo-react-native"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-expo-react-native",
+          "score": 25.99
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-expo-react-native",
+            "score": 25.990262
+          },
+          {
+            "skill_id": "animate-expo",
+            "score": 8.538004
+          },
+          {
+            "skill_id": "mcp-server-patterns",
+            "score": 5.547
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "animate-expo",
+          "score": 0.344408
+        },
+        "top3": [
+          {
+            "skill_id": "animate-expo",
+            "score": 0.344408
+          },
+          {
+            "skill_id": "dpe-expo-react-native",
+            "score": 0.344408
+          },
+          {
+            "skill_id": "dpe-react-development",
+            "score": 0.344408
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-expo-react-native"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-expo-react-native",
+        "selected": [
+          "dpe-expo-react-native"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-068",
+      "prompt": "improve our SEO",
+      "expected": [
+        "seo-audit"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "seo-audit",
+          "score": 25.361
+        },
+        "top3": [
+          {
+            "skill_id": "seo-audit",
+            "score": 25.360798
+          },
+          {
+            "skill_id": "ai-seo",
+            "score": 11.697158
+          },
+          {
+            "skill_id": "dpe-seo-geo",
+            "score": 11.389015
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "analytics",
+          "score": 0.526148
+        },
+        "top3": [
+          {
+            "skill_id": "analytics",
+            "score": 0.526148
+          },
+          {
+            "skill_id": "aso",
+            "score": 0.526148
+          },
+          {
+            "skill_id": "dpe-prompt-optimizer",
+            "score": 0.526148
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "seo-audit"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "seo-audit",
+        "selected": [
+          "seo-audit"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-069",
+      "prompt": "run Google Ads for our app",
+      "expected": [
+        "ads"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "ads",
+          "score": 23.028
+        },
+        "top3": [
+          {
+            "skill_id": "ads",
+            "score": 23.027844
+          },
+          {
+            "skill_id": "dpe-mobile-app-release",
+            "score": 8.859054
+          },
+          {
+            "skill_id": "ad-creative",
+            "score": 7.166845
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "ads",
+          "score": 0.768957
+        },
+        "top3": [
+          {
+            "skill_id": "ads",
+            "score": 0.768957
+          },
+          {
+            "skill_id": "ad-creative",
+            "score": 0.525556
+          },
+          {
+            "skill_id": "dpe-paid-acquisition-monetization",
+            "score": 0.525556
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "ads"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "ads",
+        "selected": [
+          "ads"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-070",
+      "prompt": "answer engine optimization for our docs",
+      "expected": [
+        "ai-seo"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "ai-seo",
+          "score": 24.219
+        },
+        "top3": [
+          {
+            "skill_id": "ai-seo",
+            "score": 24.218632
+          },
+          {
+            "skill_id": "dpe-seo-geo",
+            "score": 7.433741
+          },
+          {
+            "skill_id": "dpe-grounding",
+            "score": 6.480541
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "ai-seo",
+          "score": 0.765647
+        },
+        "top3": [
+          {
+            "skill_id": "ai-seo",
+            "score": 0.765647
+          },
+          {
+            "skill_id": "scroll-world",
+            "score": 0.299758
+          },
+          {
+            "skill_id": "dpe-polyglot-engineering",
+            "score": 0.280449
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "ai-seo"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "ai-seo",
+        "selected": [
+          "ai-seo"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-071",
+      "prompt": "product hunt launch plan",
+      "expected": [
+        "launch"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "launch",
+          "score": 33.721
+        },
+        "top3": [
+          {
+            "skill_id": "launch",
+            "score": 33.72067
+          },
+          {
+            "skill_id": "directory-submissions",
+            "score": 8.603219
+          },
+          {
+            "skill_id": "dpe-launch-commercialization",
+            "score": 8.575703
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "launch",
+          "score": 1.0
+        },
+        "top3": [
+          {
+            "skill_id": "launch",
+            "score": 1.0
+          },
+          {
+            "skill_id": "directory-submissions",
+            "score": 0.805436
+          },
+          {
+            "skill_id": "offers",
+            "score": 0.638319
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "launch"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "launch",
+        "selected": [
+          "launch"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-072",
+      "prompt": "write landing page copy for our SaaS",
+      "expected": [
+        "copywriting"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "copywriting",
+          "score": 21.934
+        },
+        "top3": [
+          {
+            "skill_id": "copywriting",
+            "score": 21.933644
+          },
+          {
+            "skill_id": "taste-skill",
+            "score": 12.632269
+          },
+          {
+            "skill_id": "hallmark",
+            "score": 8.9306
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "ad-creative",
+          "score": 0.770255
+        },
+        "top3": [
+          {
+            "skill_id": "ad-creative",
+            "score": 0.770255
+          },
+          {
+            "skill_id": "copywriting",
+            "score": 0.770255
+          },
+          {
+            "skill_id": "prospecting",
+            "score": 0.430353
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "copywriting"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "copywriting",
+        "selected": [
+          "copywriting"
+        ],
+        "deferred": [
+          {
+            "skill_id": "taste-skill",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-073",
+      "prompt": "do a competitive analysis of our top 3 competitors",
+      "expected": [
+        "competitor-profiling"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "competitor-profiling",
+          "score": 21.606
+        },
+        "top3": [
+          {
+            "skill_id": "competitor-profiling",
+            "score": 21.605674
+          },
+          {
+            "skill_id": "dpe-market-analysis",
+            "score": 8.721072
+          },
+          {
+            "skill_id": "dpe-competitor-intelligence",
+            "score": 8.477232
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "competitor-profiling",
+          "score": 0.689625
+        },
+        "top3": [
+          {
+            "skill_id": "competitor-profiling",
+            "score": 0.689625
+          },
+          {
+            "skill_id": "social",
+            "score": 0.525403
+          },
+          {
+            "skill_id": "competitors",
+            "score": 0.481148
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "competitor-profiling"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "competitor-profiling",
+        "selected": [
+          "competitor-profiling"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-074",
+      "prompt": "do a pr review of #123",
+      "expected": [
+        "dpe-rigorous-code-review"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-rigorous-code-review",
+          "score": 17.487
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-rigorous-code-review",
+            "score": 17.487467
+          },
+          {
+            "skill_id": "pr-review-triage",
+            "score": 12.555441
+          },
+          {
+            "skill_id": "dpe-pr-check",
+            "score": 11.386953
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-greptile-review-loop",
+          "score": 0.541639
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-greptile-review-loop",
+            "score": 0.541639
+          },
+          {
+            "skill_id": "dpe-pr-check",
+            "score": 0.541639
+          },
+          {
+            "skill_id": "dpe-rigorous-code-review",
+            "score": 0.541639
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-rigorous-code-review"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-rigorous-code-review",
+        "selected": [
+          "dpe-rigorous-code-review"
+        ],
+        "deferred": [
+          {
+            "skill_id": "pr-review-triage",
+            "reason": "does not cover another prompt concern"
+          },
+          {
+            "skill_id": "dpe-pr-check",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-075",
+      "prompt": "review this docs pr that adds a mistakes backlog for our agents",
+      "expected": [
+        "dpe-rigorous-code-review"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-rigorous-code-review",
+          "score": 18.479
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-rigorous-code-review",
+            "score": 18.478862
+          },
+          {
+            "skill_id": "pr-review-triage",
+            "score": 8.379938
+          },
+          {
+            "skill_id": "receiving-code-review",
+            "score": 6.588418
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-rigorous-code-review",
+          "score": 0.35813
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-rigorous-code-review",
+            "score": 0.35813
+          },
+          {
+            "skill_id": "dpe-greptile-review-loop",
+            "score": 0.22295
+          },
+          {
+            "skill_id": "dpe-pr-check",
+            "score": 0.22295
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-rigorous-code-review"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-rigorous-code-review",
+        "selected": [
+          "dpe-rigorous-code-review"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-076",
+      "prompt": "does this change achieve its goal or only describe it",
+      "expected": [
+        "dpe-rigorous-code-review"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-rigorous-code-review",
+          "score": 8.658
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-rigorous-code-review",
+            "score": 8.65754
+          },
+          {
+            "skill_id": "animation-vocabulary",
+            "score": 7.042288
+          },
+          {
+            "skill_id": "dpe-agentic-e2e",
+            "score": 6.167581
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-agentic-e2e",
+          "score": 0.264947
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-agentic-e2e",
+            "score": 0.264947
+          },
+          {
+            "skill_id": "dpe-cypress",
+            "score": 0.264947
+          },
+          {
+            "skill_id": "odl-pdf",
+            "score": 0.264947
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-rigorous-code-review"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-rigorous-code-review",
+        "selected": [
+          "dpe-rigorous-code-review"
+        ],
+        "deferred": [
+          {
+            "skill_id": "animation-vocabulary",
+            "reason": "does not cover another prompt concern"
+          },
+          {
+            "skill_id": "dpe-agentic-e2e",
+            "reason": "does not cover another prompt concern"
+          }
+        ],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-077",
+      "prompt": "address the review comments on my PR",
+      "expected": [
+        "receiving-code-review"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "receiving-code-review",
+          "score": 31.696
+        },
+        "top3": [
+          {
+            "skill_id": "receiving-code-review",
+            "score": 31.696067
+          },
+          {
+            "skill_id": "dpe-pr-check",
+            "score": 14.387482
+          },
+          {
+            "skill_id": "pr-review-triage",
+            "score": 13.42302
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-greptile-review-loop",
+          "score": 0.658135
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-greptile-review-loop",
+            "score": 0.658135
+          },
+          {
+            "skill_id": "dpe-pr-check",
+            "score": 0.658135
+          },
+          {
+            "skill_id": "pr-review-triage",
+            "score": 0.658135
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "receiving-code-review"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "receiving-code-review",
+        "selected": [
+          "receiving-code-review"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-078",
+      "prompt": "the checkout page is broken",
+      "expected": [
+        "dpe-diagnose-loop"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-diagnose-loop",
+          "score": 11.164
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-diagnose-loop",
+            "score": 11.163637
+          },
+          {
+            "skill_id": "dpe-product-verification",
+            "score": 9.981487
+          },
+          {
+            "skill_id": "post-merge-scan",
+            "score": 6.843946
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-product-verification",
+          "score": 0.42311
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-product-verification",
+            "score": 0.42311
+          },
+          {
+            "skill_id": "dpe-diagnose-loop",
+            "score": 0.38776
+          },
+          {
+            "skill_id": "post-merge-scan",
+            "score": 0.38776
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-diagnose-loop"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-diagnose-loop",
+        "selected": [
+          "dpe-diagnose-loop",
+          "dpe-product-verification"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-079",
+      "prompt": "use tdd to add a discount feature",
+      "expected": [
+        "dpe-tdd-loop"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-tdd-loop",
+          "score": 20.433
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-tdd-loop",
+            "score": 20.432846
+          },
+          {
+            "skill_id": "writing-skills",
+            "score": 6.149424
+          },
+          {
+            "skill_id": "dpe-laravel-tdd",
+            "score": 5.817772
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-laravel-tdd",
+          "score": 0.428373
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-laravel-tdd",
+            "score": 0.428373
+          },
+          {
+            "skill_id": "dpe-tdd-loop",
+            "score": 0.428373
+          },
+          {
+            "skill_id": "animate",
+            "score": 0.273353
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-tdd-loop"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-tdd-loop",
+        "selected": [
+          "dpe-tdd-loop"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-080",
+      "prompt": "shorter answers please",
+      "expected": [
+        "dpe-token-saver"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-token-saver",
+          "score": 19.426
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-token-saver",
+            "score": 19.426264
+          },
+          {
+            "skill_id": "ai-seo",
+            "score": 7.114089
+          },
+          {
+            "skill_id": "i-have-adhd",
+            "score": 6.465058
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-token-saver",
+          "score": 0.349967
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-token-saver",
+            "score": 0.349967
+          },
+          {
+            "skill_id": "ai-seo",
+            "score": 0.300067
+          },
+          {
+            "skill_id": "dpe-polyglot-engineering",
+            "score": 0.300067
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-token-saver"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-token-saver",
+        "selected": [
+          "dpe-token-saver"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-081",
+      "prompt": "audit this UI for AI slop before we ship",
+      "expected": [
+        "dpe-quality-core"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-quality-core",
+          "score": 14.919
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-quality-core",
+            "score": 14.919461
+          },
+          {
+            "skill_id": "dpe-quality-ui",
+            "score": 9.177403
+          },
+          {
+            "skill_id": "hallmark",
+            "score": 7.51565
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-quality-core",
+          "score": 0.43945
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-quality-core",
+            "score": 0.43945
+          },
+          {
+            "skill_id": "accessibility",
+            "score": 0.315166
+          },
+          {
+            "skill_id": "ai-seo",
+            "score": 0.312338
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-quality-core"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-quality-core",
+        "selected": [
+          "dpe-quality-core"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-082",
+      "prompt": "build an admin dashboard for our product",
+      "expected": [
+        "dpe-ui-ux-design-to-code"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-ui-ux-design-to-code",
+          "score": 19.034
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-ui-ux-design-to-code",
+            "score": 19.034059
+          },
+          {
+            "skill_id": "dpe-quality-ui",
+            "score": 8.558604
+          },
+          {
+            "skill_id": "redesign-skill",
+            "score": 8.26402
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "dpe-product-strategy",
+          "score": 0.338465
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-product-strategy",
+            "score": 0.338465
+          },
+          {
+            "skill_id": "community-marketing",
+            "score": 0.338465
+          },
+          {
+            "skill_id": "offers",
+            "score": 0.338465
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": false
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-ui-ux-design-to-code"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-ui-ux-design-to-code",
+        "selected": [
+          "dpe-ui-ux-design-to-code"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-083",
+      "prompt": "turn this Figma screenshot into React code",
+      "expected": [
+        "dpe-ui-ux-design-to-code"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "dpe-ui-ux-design-to-code",
+          "score": 12.749
+        },
+        "top3": [
+          {
+            "skill_id": "dpe-ui-ux-design-to-code",
+            "score": 12.748969
+          },
+          {
+            "skill_id": "image",
+            "score": 6.384321
+          },
+          {
+            "skill_id": "dpe-react-development",
+            "score": 5.049889
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "image",
+          "score": 0.468692
+        },
+        "top3": [
+          {
+            "skill_id": "image",
+            "score": 0.468692
+          },
+          {
+            "skill_id": "graphify",
+            "score": 0.328307
+          },
+          {
+            "skill_id": "dpe-ui-ux-design-to-code",
+            "score": 0.320945
+          }
+        ],
+        "top1_hit": false,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "dpe-ui-ux-design-to-code"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "dpe-ui-ux-design-to-code",
+        "selected": [
+          "dpe-ui-ux-design-to-code"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    },
+    {
+      "case_id": "routing-084",
+      "prompt": "generate a brand kit and logo system",
+      "expected": [
+        "brandkit"
+      ],
+      "sources": [
+        "REVIEW_ROUTING_CASES"
+      ],
+      "dpe": {
+        "top1": {
+          "skill_id": "brandkit",
+          "score": 28.523
+        },
+        "top3": [
+          {
+            "skill_id": "brandkit",
+            "score": 28.523422
+          },
+          {
+            "skill_id": "image",
+            "score": 6.561163
+          },
+          {
+            "skill_id": "dpe-design-systems",
+            "score": 5.789673
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "description_only": {
+        "top1": {
+          "skill_id": "brandkit",
+          "score": 0.6006
+        },
+        "top3": [
+          {
+            "skill_id": "brandkit",
+            "score": 0.6006
+          },
+          {
+            "skill_id": "scroll-world",
+            "score": 0.579588
+          },
+          {
+            "skill_id": "dpe-design-systems",
+            "score": 0.349112
+          }
+        ],
+        "top1_hit": true,
+        "top3_hit": true
+      },
+      "automatic_selection": {
+        "expected_mode": "model_primary",
+        "expected_model_ids": [
+          "brandkit"
+        ],
+        "expected_user_only_ids": [],
+        "primary": "brandkit",
+        "selected": [
+          "brandkit"
+        ],
+        "deferred": [],
+        "hit": true
+      }
+    }
+  ],
+  "limitations": [
+    "Routing has been tuned against this curated corpus; this is not generalization evidence.",
+    "Measures candidate ranking and primary/defer policy outcomes, not full complement coverage, host loading or task quality.",
+    "No model coding runs, token consumption, cost, latency or live optional runtime measurements."
+  ]
+}

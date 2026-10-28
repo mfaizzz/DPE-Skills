@@ -1,0 +1,92 @@
+# Inherited local-reference gaps
+
+A lexical scan of top-level SKILL.md Markdown links found the following unresolved local paths in the original snapshot. Some are example document names or optional integration guides; this is not a list of confirmed runtime defects. None was introduced by the DPE merge. The original snapshot remains in the local backup; no missing source is fabricated.
+
+When a workflow depends on an unavailable reference or tool, report it and use an available official source/connector only within the user's scope. Do not assume the missing guide is installed or silently install an integration.
+
+| Skill | Unresolved local reference |
+|---|---|
+| `skills/ads/SKILL.md` | `../../tools/REGISTRY.md` |
+| `skills/ads/SKILL.md` | `../../tools/integrations/google-ads.md` |
+| `skills/ads/SKILL.md` | `../../tools/integrations/meta-ads.md` |
+| `skills/ads/SKILL.md` | `../../tools/integrations/linkedin-ads.md` |
+| `skills/ads/SKILL.md` | `../../tools/integrations/tiktok-ads.md` |
+| `skills/ads/SKILL.md` | `../../tools/integrations/ga4.md` |
+| `skills/ads/SKILL.md` | `../../tools/integrations/segment.md` |
+| `skills/architecture-decision-records/SKILL.md` | `0001-use-nextjs.md` |
+| `skills/architecture-decision-records/SKILL.md` | `0002-postgres-over-mongo.md` |
+| `skills/architecture-decision-records/SKILL.md` | `0003-rest-over-graphql.md` |
+| `skills/video/SKILL.md` | `../../tools/integrations/heygen.md` |
+| `skills/video/SKILL.md` | `../../tools/integrations/hyperframes.md` |
+| `skills/mcp-server-patterns/SKILL.md` | `../../docs/capability-surface-selection.md` |
+| `skills/sms/SKILL.md` | `../../tools/REGISTRY.md` |
+| `skills/sms/SKILL.md` | `../../tools/integrations/klaviyo.md` |
+| `skills/sms/SKILL.md` | `../../tools/integrations/postscript.md` |
+| `skills/sms/SKILL.md` | `../../tools/integrations/attentive.md` |
+| `skills/sms/SKILL.md` | `../../tools/integrations/twilio.md` |
+| `skills/sms/SKILL.md` | `../../tools/integrations/plivo.md` |
+| `skills/sms/SKILL.md` | `../../tools/integrations/audiencetap.md` |
+| `skills/sms/SKILL.md` | `../../tools/integrations/brevo.md` |
+| `skills/sms/SKILL.md` | `../../tools/integrations/customer-io.md` |
+| `skills/hallmark/SKILL.md` | `../../docs/recipes.md` |
+| `skills/hallmark/SKILL.md` | `../../docs/study-examples.md` |
+| `skills/launch/SKILL.md` | `../../tools/integrations/introw.md` |
+| `skills/referrals/SKILL.md` | `../../tools/REGISTRY.md` |
+| `skills/referrals/SKILL.md` | `../../tools/integrations/rewardful.md` |
+| `skills/referrals/SKILL.md` | `../../tools/integrations/tolt.md` |
+| `skills/referrals/SKILL.md` | `../../tools/integrations/mention-me.md` |
+| `skills/referrals/SKILL.md` | `../../tools/integrations/dub-co.md` |
+| `skills/referrals/SKILL.md` | `../../tools/integrations/stripe.md` |
+| `skills/referrals/SKILL.md` | `../../tools/integrations/introw.md` |
+| `skills/referrals/SKILL.md` | `../../tools/integrations/partnerstack.md` |
+| `skills/emails/SKILL.md` | `../../tools/REGISTRY.md` |
+| `skills/emails/SKILL.md` | `../../tools/integrations/customer-io.md` |
+| `skills/emails/SKILL.md` | `../../tools/integrations/mailchimp.md` |
+| `skills/emails/SKILL.md` | `../../tools/integrations/nitrosend.md` |
+| `skills/emails/SKILL.md` | `../../tools/integrations/resend.md` |
+| `skills/emails/SKILL.md` | `../../tools/integrations/sendgrid.md` |
+| `skills/emails/SKILL.md` | `../../tools/integrations/kit.md` |
+| `skills/co-marketing/SKILL.md` | `../../tools/REGISTRY.md` |
+| `skills/co-marketing/SKILL.md` | `../../tools/integrations/crossbeam.md` |
+| `skills/co-marketing/SKILL.md` | `../../tools/integrations/introw.md` |
+| `skills/co-marketing/SKILL.md` | `../../tools/integrations/partnerstack.md` |
+| `skills/ad-creative/SKILL.md` | `../../tools/REGISTRY.md` |
+| `skills/ad-creative/SKILL.md` | `../../tools/integrations/google-ads.md` |
+| `skills/ad-creative/SKILL.md` | `../../tools/integrations/meta-ads.md` |
+| `skills/ad-creative/SKILL.md` | `../../tools/integrations/linkedin-ads.md` |
+| `skills/ad-creative/SKILL.md` | `../../tools/integrations/tiktok-ads.md` |
+| `skills/ai-seo/SKILL.md` | `../../tools/REGISTRY.md` |
+| `skills/sales-enablement/SKILL.md` | `../../tools/REGISTRY.md` |
+| `skills/sales-enablement/SKILL.md` | `../../tools/integrations/introw.md` |
+| `skills/revops/SKILL.md` | `../../tools/REGISTRY.md` |
+| `skills/revops/SKILL.md` | `../../tools/integrations/hubspot.md` |
+| `skills/revops/SKILL.md` | `../../tools/integrations/salesforce.md` |
+| `skills/revops/SKILL.md` | `../../tools/integrations/calendly.md` |
+| `skills/revops/SKILL.md` | `../../tools/integrations/savvycal.md` |
+| `skills/revops/SKILL.md` | `../../tools/integrations/clearbit.md` |
+| `skills/revops/SKILL.md` | `../../tools/integrations/apollo.md` |
+| `skills/revops/SKILL.md` | `../../tools/integrations/activecampaign.md` |
+| `skills/revops/SKILL.md` | `../../tools/integrations/zapier.md` |
+| `skills/revops/SKILL.md` | `../../tools/integrations/introw.md` |
+| `skills/revops/SKILL.md` | `../../tools/integrations/crossbeam.md` |
+| `skills/churn-prevention/SKILL.md` | `../../tools/integrations/posthog.md` |
+| `skills/churn-prevention/SKILL.md` | `../../tools/REGISTRY.md` |
+| `skills/analytics/SKILL.md` | `../../tools/REGISTRY.md` |
+| `skills/analytics/SKILL.md` | `../../tools/integrations/ga4.md` |
+| `skills/analytics/SKILL.md` | `../../tools/integrations/mixpanel.md` |
+| `skills/analytics/SKILL.md` | `../../tools/integrations/amplitude.md` |
+| `skills/analytics/SKILL.md` | `../../tools/integrations/posthog.md` |
+| `skills/analytics/SKILL.md` | `../../tools/integrations/segment.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/REGISTRY.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/integrations/apollo.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/integrations/clay.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/integrations/clearbit.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/integrations/zoominfo.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/integrations/hunter.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/integrations/snov.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/integrations/truelist.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/integrations/outreach.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/integrations/rb2b.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/integrations/github.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/integrations/firecrawl.md` |
+| `skills/prospecting/SKILL.md` | `../../tools/integrations/browserbase.md` |

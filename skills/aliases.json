@@ -1,0 +1,17 @@
+{
+  "aliases": {
+    "dpe-caveman": "dpe-token-saver",
+    "dpe-root-cause-investigation": "dpe-diagnose-loop",
+    "dpe-bug-finding": "dpe-diagnose-loop",
+    "dpe-project-management": "dpe-planning-execution",
+    "dpe-social-content-calendar": "dpe-content-calendar",
+    "dpe-agent-security-hardening": "dpe-prompt-injection-defense",
+    "dpe-grill-me": "dpe-grill-with-docs",
+    "dpe-zoom-out": "dpe-codebase-analysis",
+    "destructive_command_guard": "dcg",
+    "dpe-human-output": "dpe-quality-copywriting",
+    "dpe-recipes": "dpe-prompt-optimizer",
+    "dpe-engineering-principles": "dpe-engineering-delivery",
+    "dpe-workspace-assistant": "cofounder"
+  }
+}

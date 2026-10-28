@@ -1,0 +1,372 @@
+{
+  "version": "1.0.0",
+  "review_days": 180,
+  "provenance": {
+    "marketingskills": {
+      "upstream": "coreyhaines31/marketingskills",
+      "last_synced": "2026-09-07"
+    },
+    "superpowers": {
+      "upstream": "obra/superpowers",
+      "last_synced": "2026-10-12"
+    },
+    "hallmark": {
+      "upstream": "Nutlope/hallmark",
+      "last_synced": "2026-09-26"
+    },
+    "browser-use": {
+      "upstream": "browser-use/browser-use",
+      "last_synced": "2026-07-16"
+    },
+    "graphify": {
+      "upstream": "Graphify-Labs/graphify",
+      "last_synced": "2026-09-07"
+    },
+    "markitdown": {
+      "upstream": "microsoft/markitdown",
+      "last_synced": "2026-07-16"
+    },
+    "loop-engineering": {
+      "upstream": "cobusgreyling/loop-engineering",
+      "last_synced": "2026-09-07"
+    },
+    "taste-skill": {
+      "upstream": "Leonxlnx/taste-skill",
+      "last_synced": "2026-09-07"
+    },
+    "scroll-world": {
+      "upstream": "oso95/scroll-world",
+      "last_synced": "2026-09-07"
+    },
+    "dcg": {
+      "upstream": "Dicklesworthstone/destructive_command_guard",
+      "last_synced": "2026-09-07"
+    },
+    "emil-skills": {
+      "upstream": "emilkowalski/skills",
+      "last_synced": "2026-09-07"
+    },
+    "graft": {
+      "upstream": "NanoNets/Graft",
+      "last_synced": "2026-08-18"
+    },
+    "i-have-adhd": {
+      "upstream": "ayghri/i-have-adhd",
+      "last_synced": "2026-09-07"
+    },
+    "ecc": {
+      "upstream": "affaan-m/ECC",
+      "last_synced": "2026-10-12"
+    },
+    "dpe-quality-core": {
+      "upstream": "miqdadbadjuber/anti-slop",
+      "last_synced": "2026-09-18"
+    },
+    "opendataloader-pdf": {
+      "upstream": "opendataloader-project/opendataloader-pdf",
+      "last_synced": "2026-09-18"
+    },
+    "moli": {
+      "upstream": "lexmount/moli",
+      "last_synced": "2026-10-08"
+    }
+  },
+  "packs": {
+    "marketingskills": [
+      "ab-testing",
+      "ad-creative",
+      "ads",
+      "ai-seo",
+      "analytics",
+      "aso",
+      "churn-prevention",
+      "co-marketing",
+      "cold-email",
+      "community-marketing",
+      "competitor-profiling",
+      "competitors",
+      "content-strategy",
+      "copy-editing",
+      "copywriting",
+      "cro",
+      "customer-research",
+      "directory-submissions",
+      "emails",
+      "free-tools",
+      "image",
+      "launch",
+      "lead-magnets",
+      "marketing-council",
+      "marketing-ideas",
+      "marketing-loops",
+      "marketing-plan",
+      "marketing-psychology",
+      "offers",
+      "onboarding",
+      "paywalls",
+      "popups",
+      "pricing",
+      "product-marketing",
+      "programmatic-seo",
+      "prospecting",
+      "public-relations",
+      "referrals",
+      "revops",
+      "sales-enablement",
+      "schema",
+      "seo-audit",
+      "signup",
+      "site-architecture",
+      "sms",
+      "social",
+      "video"
+    ],
+    "superpowers": [
+      "brainstorming",
+      "diagnosing-superpowers",
+      "dispatching-parallel-agents",
+      "executing-plans",
+      "finishing-a-development-branch",
+      "receiving-code-review",
+      "requesting-code-review",
+      "subagent-driven-development",
+      "systematic-debugging",
+      "test-driven-development",
+      "using-git-worktrees",
+      "using-superpowers",
+      "verification-before-completion",
+      "writing-plans",
+      "writing-skills"
+    ],
+    "hallmark": [
+      "hallmark"
+    ],
+    "browser-use": [
+      "browser-use",
+      "cloud",
+      "open-source",
+      "remote-browser",
+      "x402"
+    ],
+    "graphify": [
+      "graphify"
+    ],
+    "markitdown": [
+      "markitdown"
+    ],
+    "loop-engineering": [
+      "loop-budget",
+      "loop-constraints",
+      "loop-triage",
+      "loop-verifier",
+      "minimal-fix",
+      "ci-triage",
+      "issue-triage",
+      "dependency-triage",
+      "pr-review-triage",
+      "post-merge-scan",
+      "changelog-scan",
+      "draft-release-notes"
+    ],
+    "taste-skill": [
+      "taste-skill",
+      "image-to-code-skill",
+      "redesign-skill",
+      "soft-skill",
+      "output-skill",
+      "minimalist-skill",
+      "brutalist-skill",
+      "imagegen-frontend-web",
+      "imagegen-frontend-mobile",
+      "brandkit"
+    ],
+    "scroll-world": [
+      "scroll-world"
+    ],
+    "dcg": [
+      "dcg"
+    ],
+    "emil-skills": [
+      "animate",
+      "animation-vocabulary",
+      "apple-design",
+      "emil-design-eng",
+      "find-animation-opportunities",
+      "improve-animations",
+      "pick-ui-library",
+      "prototype",
+      "review-animations",
+      "animate-expo",
+      "ask-sonner",
+      "write-swift"
+    ],
+    "graft": [
+      "graft"
+    ],
+    "i-have-adhd": [
+      "i-have-adhd"
+    ],
+    "ecc": [
+      "accessibility",
+      "architecture-decision-records",
+      "database-migrations",
+      "e2e-testing",
+      "error-handling",
+      "mcp-server-patterns",
+      "mysql-patterns",
+      "python-patterns",
+      "python-testing",
+      "vue-patterns"
+    ],
+    "dpe-quality-core": [
+      "dpe-quality-core",
+      "dpe-quality-code",
+      "dpe-quality-copywriting",
+      "dpe-quality-human",
+      "dpe-quality-layoutmobile",
+      "dpe-quality-ui"
+    ],
+    "opendataloader-pdf": [
+      "odl-pdf"
+    ],
+    "moli": [
+      "moli-webfetch",
+      "moli-cdp-server"
+    ]
+  },
+  "skills": {
+    "ab-testing": "marketingskills",
+    "ad-creative": "marketingskills",
+    "ads": "marketingskills",
+    "ai-seo": "marketingskills",
+    "analytics": "marketingskills",
+    "aso": "marketingskills",
+    "churn-prevention": "marketingskills",
+    "co-marketing": "marketingskills",
+    "cold-email": "marketingskills",
+    "community-marketing": "marketingskills",
+    "competitor-profiling": "marketingskills",
+    "competitors": "marketingskills",
+    "content-strategy": "marketingskills",
+    "copy-editing": "marketingskills",
+    "copywriting": "marketingskills",
+    "cro": "marketingskills",
+    "customer-research": "marketingskills",
+    "directory-submissions": "marketingskills",
+    "emails": "marketingskills",
+    "free-tools": "marketingskills",
+    "image": "marketingskills",
+    "launch": "marketingskills",
+    "lead-magnets": "marketingskills",
+    "marketing-council": "marketingskills",
+    "marketing-ideas": "marketingskills",
+    "marketing-loops": "marketingskills",
+    "marketing-plan": "marketingskills",
+    "marketing-psychology": "marketingskills",
+    "offers": "marketingskills",
+    "onboarding": "marketingskills",
+    "paywalls": "marketingskills",
+    "popups": "marketingskills",
+    "pricing": "marketingskills",
+    "product-marketing": "marketingskills",
+    "programmatic-seo": "marketingskills",
+    "prospecting": "marketingskills",
+    "public-relations": "marketingskills",
+    "referrals": "marketingskills",
+    "revops": "marketingskills",
+    "sales-enablement": "marketingskills",
+    "schema": "marketingskills",
+    "seo-audit": "marketingskills",
+    "signup": "marketingskills",
+    "site-architecture": "marketingskills",
+    "sms": "marketingskills",
+    "social": "marketingskills",
+    "video": "marketingskills",
+    "brainstorming": "superpowers",
+    "diagnosing-superpowers": "superpowers",
+    "dispatching-parallel-agents": "superpowers",
+    "executing-plans": "superpowers",
+    "finishing-a-development-branch": "superpowers",
+    "receiving-code-review": "superpowers",
+    "requesting-code-review": "superpowers",
+    "subagent-driven-development": "superpowers",
+    "systematic-debugging": "superpowers",
+    "test-driven-development": "superpowers",
+    "using-git-worktrees": "superpowers",
+    "using-superpowers": "superpowers",
+    "verification-before-completion": "superpowers",
+    "writing-plans": "superpowers",
+    "writing-skills": "superpowers",
+    "hallmark": "hallmark",
+    "browser-use": "browser-use",
+    "cloud": "browser-use",
+    "open-source": "browser-use",
+    "remote-browser": "browser-use",
+    "x402": "browser-use",
+    "graphify": "graphify",
+    "markitdown": "markitdown",
+    "loop-budget": "loop-engineering",
+    "loop-constraints": "loop-engineering",
+    "loop-triage": "loop-engineering",
+    "loop-verifier": "loop-engineering",
+    "minimal-fix": "loop-engineering",
+    "ci-triage": "loop-engineering",
+    "issue-triage": "loop-engineering",
+    "dependency-triage": "loop-engineering",
+    "pr-review-triage": "loop-engineering",
+    "post-merge-scan": "loop-engineering",
+    "changelog-scan": "loop-engineering",
+    "draft-release-notes": "loop-engineering",
+    "taste-skill": "taste-skill",
+    "image-to-code-skill": "taste-skill",
+    "redesign-skill": "taste-skill",
+    "soft-skill": "taste-skill",
+    "output-skill": "taste-skill",
+    "minimalist-skill": "taste-skill",
+    "brutalist-skill": "taste-skill",
+    "imagegen-frontend-web": "taste-skill",
+    "imagegen-frontend-mobile": "taste-skill",
+    "brandkit": "taste-skill",
+    "scroll-world": "scroll-world",
+    "dcg": "dcg",
+    "animate": "emil-skills",
+    "animation-vocabulary": "emil-skills",
+    "apple-design": "emil-skills",
+    "emil-design-eng": "emil-skills",
+    "find-animation-opportunities": "emil-skills",
+    "improve-animations": "emil-skills",
+    "pick-ui-library": "emil-skills",
+    "prototype": "emil-skills",
+    "review-animations": "emil-skills",
+    "graft": "graft",
+    "animate-expo": "emil-skills",
+    "ask-sonner": "emil-skills",
+    "write-swift": "emil-skills",
+    "i-have-adhd": "i-have-adhd",
+    "accessibility": "ecc",
+    "architecture-decision-records": "ecc",
+    "database-migrations": "ecc",
+    "e2e-testing": "ecc",
+    "error-handling": "ecc",
+    "mcp-server-patterns": "ecc",
+    "mysql-patterns": "ecc",
+    "python-patterns": "ecc",
+    "python-testing": "ecc",
+    "vue-patterns": "ecc",
+    "dpe-quality-core": "dpe-quality-core",
+    "dpe-quality-code": "dpe-quality-core",
+    "dpe-quality-copywriting": "dpe-quality-core",
+    "dpe-quality-human": "dpe-quality-core",
+    "dpe-quality-layoutmobile": "dpe-quality-core",
+    "dpe-quality-ui": "dpe-quality-core",
+    "odl-pdf": "opendataloader-pdf",
+    "moli-webfetch": "moli",
+    "moli-cdp-server": "moli"
+  },
+  "excluded": {
+    "taste-skill-v1": "taste-skill: legacy v1 kept upstream for exact-v1 compatibility; conflicts with the default stack",
+    "gpt-tasteskill": "taste-skill: GPT/Codex variant; prints simulated RNG output and prefers a centered dark hero",
+    "stitch-skill": "taste-skill: DESIGN.md template fails WCAG contrast; dpe-design-systems owns the Stitch format",
+    "moli-websearch": "moli: its references tell the agent to scrape public API keys from third-party frontends and to switch search engines after a CAPTCHA, which conflicts with the rule against bypassing bot detection"
+  }
+}
