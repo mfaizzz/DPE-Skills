@@ -23,3 +23,10 @@ The old library's 823-test runtime result belongs to its original CLI; it is not
 These checks validate distribution/routing/installation behavior, not every skill's specialist assertions or any live Snowflake/ADF/business system. Target-repository rules and current approved specifications determine actual project compliance. No private project artifacts or credential values are included in this package.
 
 GitHub publication and remote CI results are tracked separately from these local checks. A successful Git push is not a successful GitHub Actions run.
+
+## Publication verification
+
+- Public repository: https://github.com/mfaizzz/DPE-Skills
+- Initial published commit: `8efd908cae7b9ec766b6aa8bd0b35eedf0b21371`; remote `main` matched the local commit.
+- GitHub Actions run [40707525382](https://github.com/mfaizzz/DPE-Skills/actions/runs/40707525382): **success**. The remote Ubuntu/Python 3.11 job passed distribution validation and all nine routing/installation tests.
+- This record refers to that observed run, not an assumed outcome for future commits. No target project deployment or third-party tool authentication is implied.
